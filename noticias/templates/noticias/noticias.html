@@ -1,0 +1,92 @@
+{% extends "onrm/base.html" %}
+{% load static %}
+
+{% block body %}
+    <link href="{% static 'css/blog-home.css' %}" rel="stylesheet">
+     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+     <div class="container">
+
+        <div class="row">
+
+      <!-- Blog Entries Column -->
+            <div class="col-md-8">
+
+            <h1 class="my-4">Noticias
+              <small>El acontecer noticioso de la ONRM</small>
+            </h1>
+
+            <!-- Blog Post -->
+         {% for news in list_news %}
+            <div class="card mb-4">
+             <div class="card-body">
+                <h2 class="card-title">{{ news.titulo }}</h2>
+                <p class="card-text">{{news.resumen}}</p>
+                <a href="{{ news.get_absolute_url }}" class="btn btn-info"style="background-color: transparent;border-color: #856404;color: black">Leer más &rarr;</a>
+              </div>
+              <div class="card-footer text-muted">
+                Posteado el {{ news.created }} por <a href="#">{{ noticia.author}}</a>
+              </div>
+            </div>
+
+
+     {% endfor %}
+
+
+
+
+        <!-- Pagination -->
+      {% if is_paginated %}
+        <ul class="pagination justify-content-center mb-4">
+         {% if page_obj.has_previous %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&larr;Anterior</a>
+          </li>
+             {% endif %}
+            {% if page_obj.has_next %}
+          <li class="page-item ">
+            <a class="page-link" href="?page={{ page_obj.next_page_number }}">&rarr;Siguiente</a>
+          </li>
+              {% endif %}
+            </ul>
+      {% endif %}
+        </div>
+
+
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4" >
+
+        <!-- Search Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Buscar</h5>
+          <div class="card-body">
+          <form action="{% url 'resultados_busqueda' %}" method="GET">
+            <div class="input-group">
+              <input type="text" class="form-control" name="scan" placeholder="Busqueda...">
+              <span class="input-group-append">
+                  <input class="btn btn-secondary" type="submit" name= "buscar" value="Buscar">
+                  </form>
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Noti Rápidas</h5>
+          <div class="card-body">
+           Muy pronto estará disponible una nueva versión de la página web de la Oficina Nacional de Recursos Minerales. Sigue nuestras redes sociales.
+          </div>
+        </div>
+
+      </div>
+
+     </div>
+
+    </div>
+</div>
+
+    <!-- /.row -->
+
+{% endblock %}

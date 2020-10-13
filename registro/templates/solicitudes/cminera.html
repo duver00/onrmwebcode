@@ -1,0 +1,109 @@
+{% extends 'onrm/base.html' %}
+{% load static %}
+
+{% block body %}
+
+  	<title>Registro Minero</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="{% static 'css/registro.css' %}">
+
+
+
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+	  		<div class="img bg-wrap text-center py-4" style="background-image: url('{% static 'images/bg_1.jpg' %}');">
+	  			<div class="user-logo">
+	  				<div class="img" style="background-image: url('{% static 'images/logo.jpg' %}');"></div>
+	  				<h3>Catriona Henderson</h3>
+	  			</div>
+	  		</div>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="#"><span class="fa fa-home mr-3"></span>Registro Minero Petrolero</a>
+          </li>
+          <li class="active">
+              <a href="#homeSubmenu" class="dropdown-toggle mr-3" data-toggle="collapse" aria-expanded="false" >Legislación</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li>
+                     <a href="{% url "lminera" %}">Legislación Minera</a>
+                  </li>
+                  <li>
+                     <a href="{% url "lpetrolera" %}">Legislación Petrolera</a>
+                  </li>
+                   <li>
+                     <a href="{% url "lotras" %}">Otras Legislaciones</a>
+                   </li>
+              </ul>
+          </li>
+          <li class="active">
+              <a href="#homeSubmenu2" class="dropdown-toggle mr-3" data-toggle="collapse" aria-expanded="false">Derechos Vigentes</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu2">
+                  <li>
+                     <a href="{% url 'dmineros' %}">Minerales y Aguas</a>
+                  </li>
+                  <li>
+                     <a href="{% url 'dpetroleo' %}">Hidrocarburos</a>
+                  </li>
+               </ul>
+          </li>
+           <li class="">
+              <a href="#homeSubmenu3" class="dropdown-toggle mr-3" data-toggle="collapse" aria-expanded="false">Solicitudes</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu3">
+                  <li>
+                     <a href="{% url 'reconocimiento' %}">Permiso de Reconocimiento</a>
+                  </li>
+                  <li>
+                     <a href="#">Concesión Minera</a>
+                  </li>
+
+              </ul>
+          </li>
+
+            </ul>
+
+         </nav>
+
+            <!-- Page Content  -->
+          <div id="content" class="p-4 p-md-5 pt-5" style="color: black">
+            <p><h2>Concesi&oacute;n Minera</h2>
+
+            <p>Es la relaci&oacute;n jur&iacute;dica nacida de un acto gubernativo unilateral por el que se otorga temporalmente a una persona natural o jur&iacute;dica el derecho de realizar actividades mineras, bajo las condiciones y con todos los derechos y obligaciones que establece la Ley.</p>
+            
+            <h3>Las concesiones mineras que pueden ser:</h3>
+
+            <ul>
+                <li>Investigaci&oacute;n geol&oacute;gica: Prospecci&oacute;n y Exploraci&oacute;n</li>
+                <li>De explotaci&oacute;n</li>
+                <li>De explotaci&oacute;n y procesamiento</li>
+                <li>De procesamiento</li>
+            </ul>
+
+            <h3>Requisitos para solicitar un permiso de concesi&oacute;n minera</h3>
+
+            <ul>
+                <li>Datos relativos al solicitante, as&iacute; como su capacidad t&eacute;cnica y financiera.Identificaci&oacute;n del recurso mineral.</li>
+                <li>&Aacute;rea de la concesi&oacute;n o permiso de reconocimiento que se solicita en hect&aacute;reas y su ubicaci&oacute;n en un plano, en el sistema de coordenadas Lambert.</li>
+                <li>T&eacute;rmino por el que se solicita.</li>
+                <li>Los objetivos que se persiguen, as&iacute; como un resumen de los trabajos que se prev&eacute; realizar y sus plazos de ejecuci&oacute;n.</li>
+                <li>En el caso de las solicitudes de concesiones de explotaci&oacute;n, de procesamiento y de las peque&ntilde;as producciones mineras, la certificaci&oacute;n por el Instituto de Planificaci&oacute;n F&iacute;sica de la microlocalizaci&oacute;n de la inversi&oacute;n y la certificaci&oacute;n del organismo competente sobre el uso y tenencia de la tierra.</li>
+                <li>Cuantos otros datos y precisiones sean exigibles seg&uacute;n lo dispuesto en el&nbsp;<a href="https://www.onrm.minem.cu/registro/pdf/Decreto%20222-97%20Reglamento%20Ley%2076%20Minas.pdf" target="_blank">Reglamento de la Ley de Minas</a>.</li>
+                <li>Gravamen de impuesto sobre documentos (Sello de timbre por el valor correspondiente).</li>
+                <li>Pago por el tr&aacute;mite de inscripci&oacute;n en el Registro Minero, seg&uacute;n las tarifas establecidas en Resoluci&oacute;n No. 266. Ver modelos con los detalles en&nbsp;<a href="https://www.onrm.minem.cu/registro/pdf/Manual%20de%20Procedimiento%20Minero.pdf" target="_blank">Manual de Procedimiento minero</a>.</li>
+            </ul></p>
+          </div>
+        </div>
+     <script src="{% static 'vendor/js/jquery.min.js' %}"></script>
+     <script src="{% static 'vendor/js/popper.js' %}"></script>
+     <script src="{% static 'vendor/js/main.js' %}"></script>
+     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f6d0f0382813800120c318e&product=sticky-share-buttons'
+        async='async'></script>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'onrm/base.html' %}
+{% load static %}
+
+{% block body %}
+
+  	<title>Registro Minero</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="{% static 'css/registro.css' %}">
+
+
+
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+	  		<div class="img bg-wrap text-center py-4" style="background-image: url('{% static 'images/bg_1.jpg' %}');">
+	  			<div class="user-logo">
+	  				<div class="img" style="background-image: url('{% static 'images/logo.jpg' %}');"></div>
+	  				<h3>Archivo Técnico</h3>
+	  			</div>
+	  		</div>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="{% url 'archivo' %}"><span class="mr-3"></span>Archivo Técnico</a>
+          </li>
+          <li class="active">
+              <a href="{% url 'cpresencial' %}"><span class="mr-3"></span>Consulta Presencial</a>
+
+          </li>
+          <li class="">
+              <a href="#"><span class="mr-3"></span>Entrega Personalizada</a>
+           </li>
+           <li class="active">
+              <a href="{% url 'epresencial' %}"><span class="mr-3"></span>Entrega Presencial</a>
+           </li>
+
+            </ul>
+
+         </nav>
+         <div id="content" class="p-4 p-md-5 pt-5" style="color: black">
+             <p><h2>Entrega Personalizada</h2>
+
+            <h3>&iquest;Como realizar una entrega personalizada?</h3>
+
+            <p>Usted debe contactar con los especialistas del archivo y exponer las razones que justifiquen que por su volumen, grado de especificidad o complejidad prefiere o necesita que la informaci&oacute;n requerida se le envie a trav&eacute;s de un servicio FTP u otra v&iacute;a directa con previo acuerdo.</p>
+
+            <p>El archivo se reserva el derecho de limitar el acceso a la informaci&oacute;n en dependencia de la utilizaci&oacute;n de la misma a favor de los mejores intereses del estado cubano y teniendo en cuenta el grado de conservaci&oacute;n de los documentos.</p></p>
+                     </div>
+     </div>
+    <script src="{% static 'vendor/js/jquery.min.js' %}"></script>
+     <script src="{% static 'vendor/js/popper.js' %}"></script>
+     <script src="{% static 'vendor/js/main.js' %}"></script>
+     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f6d0f0382813800120c318e&product=sticky-share-buttons'
+        async='async'></script>
+{% endblock %}

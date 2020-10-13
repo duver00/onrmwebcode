@@ -1,0 +1,78 @@
+{% extends 'onrm/base.html' %}
+{% load static %}
+{% block body %}
+
+  	<title>Registro Minero</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="{% static 'css/registro.css' %}">
+
+
+
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+                </div>
+	  		<div class="img bg-wrap text-center py-4" style="background-image: url('{% static 'images/bg_1.jpg' %}');">
+	  			<div class="user-logo">
+	  				<div class="img" style="background-image: url('{% static 'images/logo.jpg' %}');"></div>
+	  				<h3>Catriona Henderson</h3>
+	  			</div>
+	  		</div>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="{% url "registro" %}"><span class="fa fa-home mr-3"></span>Registro Minero Petrolero</a>
+          </li>
+          <li class="">
+              <a href="#homeSubmenu" class="dropdown-toggle mr-3" data-toggle="collapse" aria-expanded="false" >Legislación</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li>
+                     <a href="{% url "lminera" %}">Legislación Minera</a>
+                  </li>
+                  <li>
+                     <a href="{% url "lpetrolera" %}">Legislación Petrolera</a>
+                  </li>
+                   <li>
+                     <a href="#">Otras Legislaciones</a>
+                   </li>
+              </ul>
+          </li>
+          <li class="active">
+              <a href="#homeSubmenu2" class="dropdown-toggle mr-3" data-toggle="collapse" aria-expanded="false">Derechos Vigentes</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu2">
+                  <li>
+                     <a href="{% url 'dmineros' %}">Minerales y Aguas</a>
+                  </li>
+                  <li>
+                     <a href="{% url "dpetroleo" %}">Hidrocarburos</a>
+                  </li>
+               </ul>
+          </li>
+           <li class="active">
+              <a href="#homeSubmenu3" class="dropdown-toggle mr-3" data-toggle="collapse" aria-expanded="false">Solicitudes</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu3">
+                  <li>
+                     <a href="{% url 'reconocimiento' %}">Permiso de Reconocimiento</a>
+                  </li>
+                  <li>
+                     <a href="{% url 'concesiones' %}">Consesion Minera</a>
+                  </li>
+              </ul>
+          </li>
+
+            </ul>
+         </nav>
+     </div>
+
+     <script src="{% static 'vendor/js/jquery.min.js' %}"></script>
+     <script src="{% static 'vendor/js/popper.js' %}"></script>
+     <script src="{% static 'vendor/js/main.js' %}"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f6d0f0382813800120c318e&product=sticky-share-buttons'
+        async='async'></script>
+{% endblock %}

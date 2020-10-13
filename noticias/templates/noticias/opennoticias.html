@@ -1,0 +1,49 @@
+{% extends "onrm/base.html" %}
+{% load static %}
+
+
+{% block body %}
+  <div class="container" >
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-10" style="color: black">
+
+        <!-- Title -->
+        <h1 class="mt-4">{{noticia.titulo}}</h1>
+
+        <!-- Author -->
+        <p class="lead">
+          by
+          <a href={{ noticia.author }}>Oficina Nacional de Recursos Minerales</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Posteado el {{ noticia.created }}</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src={{noticia.imagen.url }} alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+          <p>{{noticia.contenido|safe}}</p>>
+        <hr>
+
+      </div>
+
+      </div>
+
+  </div>
+    <!-- /.row -->
+        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f6d0f0382813800120c318e&product=sticky-share-buttons'
+        async='async'></script>
+
+  <!-- /.container -->
+{% endblock %}
+

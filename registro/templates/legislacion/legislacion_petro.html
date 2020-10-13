@@ -1,0 +1,113 @@
+{% extends 'onrm/base.html' %}
+{% load static %}
+{% block body %}
+
+  	<title>Registro Minero</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="{% static 'css/registro.css' %}">
+
+
+
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+	  		<div class="img bg-wrap text-center py-4" style="background-image: url('{% static 'images/bg_1.jpg' %}');">
+	  			<div class="user-logo">
+	  				<div class="img" style="background-image: url('{% static 'images/logo.jpg' %}');"></div>
+	  				<h3>Catriona Henderson</h3>
+	  			</div>
+	  		</div>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="{% url "registro" %}"><span class="fa fa-home mr-3"></span>Registro Minero Petrolero</a>
+          </li>
+          <li class="">
+              <a href="#homeSubmenu" class="dropdown-toggle mr-3" data-toggle="collapse" aria-expanded="false" >Legislación</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li >
+                     <a href="{% url "lminera" %}">Legislación Minera</a>
+                  </li>
+                  <li>
+                     <a href="#">Legislación Petrolera</a>
+                   <li>
+                     <a href="{% url "lotras" %}">Otras Legislaciones</a>
+                   </li>
+              </ul>
+          </li>
+          <li class="active">
+              <a href="#homeSubmenu2" class="dropdown-toggle mr-3" data-toggle="collapse" aria-expanded="false">Derechos Vigentes</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu2">
+                  <li>
+                     <a href="{% url "dmineros" %}">Minerales y Aguas</a>
+                  </li>
+                  <li>
+                     <a href="{% url "dpetroleo" %}">Hidrocarburos</a>
+                  </li>
+               </ul>
+          </li>
+           <li class="active">
+              <a href="#homeSubmenu3" class="dropdown-toggle mr-3" data-toggle="collapse" aria-expanded="false">Solicitudes</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu3">
+                  <li >
+                     <a href="{% url 'reconocimiento' %}">Permiso de Reconocimiento</a>
+                  </li>
+                  <li>
+                  </li>
+                     <a href="{% url 'concesiones' %}">Consesion Minera</a>
+                  </li>
+
+              </ul>
+          </li>
+
+            </ul>
+         </nav>
+
+            <!-- Page Content  -->
+          <div id="content" class="p-4 p-md-5 pt-5" style="color: black">
+                   <!-- Post Content -->
+                 <h2>Legislación Petrolera</h2>
+                          <p><h3>Resoluciones del Ministerio de Energia y Minas</h3>
+
+                <p>&nbsp;<a href="https://www.onrm.minem.cu/registro/pdf/R318-2015%20Tarifa%20de%20honorarios%20del%20registro%20petrolero.pdf" target="_blank">Resoluci&oacute;n 318-2015 Tarifa de honorarios del registro petrolero.pdf</a></p>
+
+                <p><a href="https://www.onrm.minem.cu/registro/pdf/R167-2018%20Otorgamiento%20de%20permiso%20para%20inicio%20de%20operaciones.pdf" target="_blank">Resoluci&oacute;n 167-2018 Otorgamiento de permiso para inicio de operaciones.pdf</a></p>
+
+                <p><a href="https://www.onrm.minem.cu/registro/pdf/RESOL.%20NO.%20191-2018%20CALIFICACION%20COMPA%C3%91IAS%20EXTRANJERAS.pdf" target="_blank">Resoluci&oacute;n de 191-2018 Calificaci&oacute;n de compa&ntilde;&iacute;as extranjeras.pdf</a></p>
+
+                <p>&nbsp;</p>
+
+                <h3>Resoluciones del extinto MINBAS</h3>
+
+                <p><a href="https://www.onrm.minem.cu/registro/pdf/R333-2007%20Procedimiento%20para%20la%20inscripci%C3%B3n%20de%20contratos%20petroleros.pdf" target="_blank">Resoluci&oacute;n 333-2007 Procedimiento para la inscripci&oacute;n de contratos petroleros.pdf</a></p>
+
+                <p><a href="https://www.onrm.minem.cu/registro/pdf/R170-2012%20Tarifa%20de%20honorarios%20del%20registro%20petrolero.pdf" target="_blank">Resoluci&oacute;n 170-2012 Tarifa de honorarios del registro petrolero.pdf</a></p>
+
+                <h3>&nbsp;</h3>
+
+                <h3>Resoluciones de la ONRM</h3>
+
+                <p><a href="https://www.onrm.minem.cu/registro/pdf/Resoluci%C3%B3n%208-2003%20ONRM%20Reglamento%20sobre%20el%20%20archivo.pdf" target="_blank">Resoluci&oacute;n 8-2003 ONRM Reglamento sobre el archivo.pdf</a></p>
+
+                <p><a href="https://www.onrm.minem.cu/registro/pdf/Resoluci%C3%B3n%206-2004%20ONRM%20Reglamento%20de%20Explotaci%C3%B3n.pdf" target="_blank">Resoluci&oacute;n 6-2004 ONRM Reglamento de Explotaci&oacute;n.pdf</a></p>
+
+                <p><a href="https://www.onrm.minem.cu/registro/pdf/Resoluci%C3%B3n%207-2004%20ONRM%20Reglamento%20de%20Exploraci%C3%B3n.pdf" target="_blank">Resoluci&oacute;n 7-2004 ONRM Reglamento de Exploraci&oacute;n.pdf</a></p>
+
+                <p><a href="https://www.onrm.minem.cu/registro/pdf/R85-2008%20Tarifa%20de%20contratos%20petroleros.pdf" target="_blank">Resoluci&oacute;n 85-2008 Tarifa de contratos petroleros.pdf</a></p>
+
+                <p>&nbsp;</p></p>
+          </div>
+  </div>
+     <script src="{% static 'vendor/js/jquery.min.js' %}"></script>
+     <script src="{% static 'vendor/js/popper.js' %}"></script>
+     <script src="{% static 'vendor/js/main.js' %}"></script>
+     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f6d0f0382813800120c318e&product=sticky-share-buttons'
+        async='async'></script>
+{% endblock %}
