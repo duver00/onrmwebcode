@@ -37,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../github/onrm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -195,11 +195,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1321" height="239" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1601520730263" />
-    <state x="259" y="37" key="SettingsEditor" timestamp="1602599956611">
+    <state x="259" y="37" key="SettingsEditor" timestamp="1602612200935">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1600377456920" />
-    <state x="259" y="37" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602599956611" />
+    <state x="259" y="37" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602612200935" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1601591177725">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -209,6 +209,10 @@
     </state>
     <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1601669684273" />
     <state x="533" y="293" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602594288525" />
+    <state x="769" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602612150793">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="769" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602612150793" />
     <state x="486" y="125" width="945" height="954" key="search.everywhere.popup" timestamp="1602528254238">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
