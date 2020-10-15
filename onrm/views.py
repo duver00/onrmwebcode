@@ -8,8 +8,8 @@ from noticias.models import Post
 
 def home(request):
     now = Post.objects.all().last()
-    noticias = Post.objects.all()
-    return render(request, "onrm/home.html", {"now": now, "titulo": noticias})
+    titulares = Post.objects.all().order_by('-created')[2:]
+    return render(request, 'onrm/home.html',{'now':now, 'titulo':titulares})
 
 
 
