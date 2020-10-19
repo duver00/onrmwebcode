@@ -14,6 +14,11 @@
             <h1 class="my-4">Noticias
               <small>El acontecer noticioso de la ONRM</small>
             </h1>
+                 <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}">Inicio</a></li>
+                      </ol>
+                 </nav>
 
             <!-- Blog Post -->
          {% for news in list_news %}

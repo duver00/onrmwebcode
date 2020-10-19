@@ -1,0 +1,150 @@
+{% extends 'onrm/base.html' %}
+{% load static %}
+
+<!------ Include the above in your HEAD tag ---------->
+{% block body %}
+    <link rel="stylesheet" href="{% static 'prueba/slidedemo-1-2.css' %}">
+       <div class="container cta-100 ">
+       <div class="container">
+          <div class="row blog">
+            <div class="col-md-12">
+              <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#blogCarousel" data-slide-to="1"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">{{ now.created.day }}/{{ now.created.month }}</span> </div>
+                            <!--Image-->
+                            <figure> <img alt="" src={{ now.imagen.url }}> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="{{ now.get_absolute_url }}" tabindex="0">
+                                <h5>{{ now.titulo }}</h5>
+                              </a>
+                            </div>
+                            <!--Data-->
+                            <div class="item-box-blog-data" style="padding: 0px 15px;">
+
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p></p>
+                            </div>
+                            <div class="mt"> <a href="{{ now.get_absolute_url }}" tabindex="0" class="btn bg-blue-ui white read">Leer mas</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                    {% for news in titulo %}
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">{{ news.created.day }}/{{ news.created.month }}</span> </div>
+                            <!--Image-->
+                            <figure> <img alt="" src="{{ news.imagen.url }}"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="{{ news.get_absolute_url }}" tabindex="0">
+                                <h5>{{ news.titulo }}</h5>
+                              </a>
+                            </div>
+                            <!--Data-->
+                            <div class="item-box-blog-data" style="padding: 0px 15px;">
+
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p></p>
+                            </div>
+                            <div class="mt"> <a href="{{ news.get_absolute_url }}" tabindex="0" class="btn bg-blue-ui white read">Leer mas</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                     {% endfor %}
+                    </div>
+                    <!--.row-->
+                  </div>
+                  <!--.item-->
+
+                  <div class="carousel-item ">
+                    <div class="row">
+                    {% for news2 in titulo2 %}
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">{{ news2.created.day }}/{{ news2.created.month }}</span> </div>
+                            <!--Image-->
+                            <figure> <img alt="" src="{{ news2.imagen.url }}"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="{{ news2.get_absolute_url }}" tabindex="0">
+                                <h5>{{ news2.titulo }}</h5>
+                              </a>
+                            </div>
+                            <!--Data-->
+
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p></p>
+                            </div>
+                            <div class="mt"> <a href="{{ news2.get_absolute_url }}" tabindex="0" class="btn bg-blue-ui white read">Leer mas</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                      {% endfor %}
+                    </div>
+                    <!--.row-->
+                  </div>
+                  <!--.item-->
+                </div>
+                <!--.carousel-inner-->
+              </div>
+              <!--.Carousel-->
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}
+
+<div class="container">
+            <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                <h2 style="text-align: center;color: #ba8b00">Ultimas Noticias</h2>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active text-center p-4">
+                         <p>{{ now.titulo }}</p>
+
+                    </div>
+                    {% for news in titulo %}
+                    <div class="carousel-item text-center p-4">
+                       <p>{{ news.titulo }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next" style="color">
+                    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>

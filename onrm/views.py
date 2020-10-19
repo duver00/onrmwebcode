@@ -8,8 +8,16 @@ from noticias.models import Post
 
 def home(request):
     now = Post.objects.all().last()
-    titulares = Post.objects.all().order_by('-created')[2:]
-    return render(request, 'onrm/home.html',{'now':now, 'titulo':titulares})
+    slidenews = Post.objects.all().order_by('-created')[2:4]
+    slidenews2 = Post.objects.all().order_by('-created')[4:8]
+    return render(request, 'onrm/home.html',{'now':now, 'titulo':slidenews, 'titulo2':slidenews2})
+
+
+def probando(request):
+    now = Post.objects.all().last()
+    slidenews = Post.objects.all().order_by('-created')[2:4]
+    slidenews2 = Post.objects.all().order_by('-created')[4:8]
+    return render(request, "prueba/slides.html",{'now':now, 'titulo':slidenews, 'titulo2':slidenews2})
 
 
 
