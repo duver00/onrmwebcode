@@ -19,6 +19,11 @@
     <orderEntry type="library" name="popper" level="application" />
     <orderEntry type="library" name="solid" level="application" />
     <orderEntry type="library" name="fontawesome" level="application" />
+    <orderEntry type="library" name="font-awesome" level="application" />
+    <orderEntry type="library" name="owl.carousel" level="application" />
+    <orderEntry type="library" name="owl.theme" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
