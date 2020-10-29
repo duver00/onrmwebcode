@@ -10,10 +10,10 @@
       <!-- Post Content Column -->
       <div class="col-lg-10" style="color: black">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Library</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          <ol style="background: #f7f7f7" class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'noticias' %}">Noticias</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ noticia.titulo }}</li>
           </ol>
         </nav>
         <!-- Title -->
@@ -21,7 +21,7 @@
 
         <!-- Author -->
         <p class="lead">
-          by
+            por
           <a href={{ noticia.author }}>Oficina Nacional de Recursos Minerales</a>
         </p>
 

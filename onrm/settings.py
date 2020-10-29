@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'archivo',
+    'notificaciones',
 ]
 CKEDITOR_UPLOAD_PATH = "uploads/"
 

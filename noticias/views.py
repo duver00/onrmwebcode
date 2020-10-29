@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Post
 from django.views.generic import DetailView, ListView
-from noticias import  models
+from noticias import models
 from  django.http import HttpResponse
 # Create your views here.
 
