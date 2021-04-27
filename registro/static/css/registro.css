@@ -8192,7 +8192,7 @@ h1, h2, h3, h4, h5,
     #sidebar.active .custom-menu {
       margin-right: -50px; }
     #sidebar.active .btn.btn-primary:before {
-      content: "\f054";
+      content: ">";
       font-family: "FontAwesome";
       left: 2px !important; }
     #sidebar.active .btn.btn-primary:after {
@@ -8281,7 +8281,7 @@ h1, h2, h3, h4, h5,
         font-family: "FontAwesome";
         color: #fff; }
       #sidebar .custom-menu .btn.btn-primary:after {
-        content: "\f053";
+        content: "<";
         right: 2px; }
 
 .bg-wrap {

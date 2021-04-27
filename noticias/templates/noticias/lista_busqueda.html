@@ -1,96 +1,113 @@
-<!DOCTYPE html>
-
-{% extends "onrm/base.html" %}
+{% extends "onrm2/base2.html" %}
 {% load static %}
-
 {% block body %}
-    <link href="{% static 'css/blog-home.css' %}" rel="stylesheet">
-     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <div class="container">
 
-    <div class="row">
+    <!-- ======= Blog Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
 
-      <!-- Blog Entries Column -->
-      <div class="col-md-8">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Noticias</h2>
 
-        <h1 class="my-4">Resultados de búsqueda para: <p style="color: black">{{ query }}</p>
-          <small></small>
-        </h1>
-
-        <!-- Blog Post -->
-    {% if noticias %}
-       {% for news in noticias %}
-         <div class="card mb-4">
-         <div class="card-body">
-            <h2 class="card-title">{{ news.titulo }}</h2>
-            <p class="card-text">{{news.resumen}}</p>
-            <a href="{{ news.get_absolute_url }}" class="btn btn-info"style="background-color: transparent;border-color: #856404;color: black">Leer más &rarr;</a>
-          </div>
-          <div class="card-footer text-muted">
-            Posteado el {{ news.created }} por
-            <a href="#">{{ noticia.author }}</a>
-          </div>
+          <ol>
+            <li><a href="{% url 'home' %}">Inicio</a></li>
+            <li>Noticias</li>
+          </ol>
         </div>
-       {% endfor %}
-    {% else %}
-         <div class="card mb-4">
-         <div class="card-body">
-            <h2 style="color: black">Lo siento no existe coinicidencias en su búsqueda</h2>
-         </div>
-         </div>
-    {% endif %}
+
+      </div>
+    </section><!-- End Blog Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section class="blog" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+            {% if noticias %}
 
 
+            {% for noticia in noticias%}
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="{{ noticia.imagen.url }}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="{{ noticia.get_absolute_url }}">{{ noticia.titulo }}</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> {{ noticia.author }}</li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i>{{ noticia.created|date }} </li>
+                 </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>{{ noticia.resumen }}</p>
+                <div class="read-more">
+                  <a href="{{ noticia.get_absolute_url }}">Leer más</a>
+                </div>
+              </div>
+                    {% endfor %}
+            {% else %}
+               <h2 class="my-4">No se encontraron resultados para <p style="color: black">{{ query }}</p>
+             {% endif %}
 
 
-        <!-- Pagination -->
-      {% if is_paginated %}
+            {% if is_paginated %}
         <ul class="pagination justify-content-center mb-4">
          {% if page_obj.has_previous %}
           <li class="page-item">
-            <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&larr;Anterior</a>
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Anterior</a>
           </li>
              {% endif %}
             {% if page_obj.has_next %}
           <li class="page-item ">
-            <a class="page-link" href="?page={{ page_obj.next_page_number }}">&rarr;Siguiente</a>
+            <a class="page-link" href="?page={{ page_obj.next_page_number }}">Siguiente</a>
           </li>
               {% endif %}
             </ul>
       {% endif %}
-        </div>
+          </div><!-- End blog entries list -->
+
+          <div class="col-lg-4">
+            <div class="sidebar">
+
+              <h3 class="sidebar-title">Buscar</h3>
+              <div class="sidebar-item search-form">
+                <form action="{% url 'resultados_busqueda' %}" method="GET">
+                  <input type=type="text" class="form-control" name="scan" placeholder="Busqueda...">
+                  <button type="submit" type="submit" name= "buscar" value="Buscar"><i class="icofont-search"></i></button>
+                </form>
+              </div><!-- End sidebar search formn-->
+
+              <h3 class="sidebar-title">Ultimas Noticias</h3>
+              <div class="sidebar-item recent-posts">
+               {% for noticia in noticias%}
+
+                  <div class="post-item clearfix">
+                  <img src="{{ noticia.imagen.url }}" alt="">
+                  <h4><a href="{{noticia.get_absolute_url}}">{{ noticia.titulo }}</a></h4>
+                   <time> {{ noticiaa.created|date }}</time>
+                  </div>
+                    {% endfor %}
+
+
+              </div><!-- End sidebar recent posts-->
 
 
 
+            </div><!-- End sidebar -->
 
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Buscar</h5>
-          <div class="card-body">
-          <form action="{% url 'resultados_busqueda' %}" method="GET">
-            <div class="input-group">
-              <input type="text" class="form-control" name="scan" placeholder="Busqueda...">
-              <span class="input-group-append">
-                  <input class="btn btn-secondary" type="submit" name= "buscar" value="Buscar">
-                  </form>
-              </span>
-            </div>
-          </div>
-        </div><!-- Sidebar Widgets Column -->
+          </div><!-- End blog sidebar -->
 
+        </div><!-- End .row -->
 
+      </div><!-- End .container -->
 
-
-        <!-- Side Widget -->
-
-
-
-
-     </div>
-
-  </div>
-
-
-    <!-- /.row -->
-
-{% endblock %}
+    </section><!-- End Blog Section -->
+  {%endblock%}

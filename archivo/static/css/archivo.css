@@ -8192,7 +8192,7 @@ h1, h2, h3, h4, h5,
     #sidebar.active .custom-menu {
       margin-right: -50px; }
     #sidebar.active .btn.btn-primary:before {
-      content: "\f054";
+      content: ">";
       font-family: "FontAwesome";
       left: 2px !important; }
     #sidebar.active .btn.btn-primary:after {
@@ -8234,15 +8234,15 @@ h1, h2, h3, h4, h5,
           font-family: "Poppins", Arial, sans-serif;
           font-size: 8px; }
       #sidebar ul li a:hover {
-        color: #ba8b00;
-        background: #2f89fc;
-        border-bottom: 1px solid #2f89fc; }
+        color: #fff;
+        background: #856404;
+        border-bottom: 1px solid #856404; }
     #sidebar ul li.active > a {
       background: transparent;
-      color: #ba8b00; }
+      color: #fff; }
       #sidebar ul li.active > a:hover {
-        background: #2f89fc;
-        border-bottom: 1px solid #2f89fc; }
+        background: #856404;
+        border-bottom: 1px solid #856404; }
   @media (max-width: 991.98px) {
     #sidebar {
       margin-left: -300px; }
@@ -8266,7 +8266,7 @@ h1, h2, h3, h4, h5,
         -o-transition: none;
         transition: none; } }
     #sidebar .custom-menu .btn.btn-primary {
-      background: #2f89fc;
+      background: #000000;
       border-color: transparent;
       position: relative;
       color: #000;
@@ -8281,8 +8281,11 @@ h1, h2, h3, h4, h5,
         font-family: "FontAwesome";
         color: #fff; }
       #sidebar .custom-menu .btn.btn-primary:after {
-        content: "\f053";
+        content: "<";
         right: 2px; }
+       #sidebar .custom-menu .btn.btn-primary:hover{
+         background: #856404;
+       }
 
 .bg-wrap {
   width: 100%;
@@ -8333,11 +8336,11 @@ a[data-toggle="collapse"] {
   transition: all 0.3s; }
 
 .btn.btn-primary {
-  background: #2f89fc;
-  border-color: #2f89fc; }
+  background: #000000;
+  border-color: #000000; }
   .btn.btn-primary:hover, .btn.btn-primary:focus {
-    background: #2f89fc !important;
-    border-color: #2f89fc !important; }
+    background: #856404 !important;
+    border-color: #856404 !important; }
 
 .footer p {
   color: rgba(255, 255, 255, 0.5); }

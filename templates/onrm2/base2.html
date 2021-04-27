@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Intranet | Oficina Nacional de Recursos Minerales</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  {% load static %}
+  <!-- Favicons -->
+  <link href="{% static 'onrm2/img/logoup.png' %}" rel="icon">
+  <link href="{% static 'onrm2/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'onrm2/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'onrm2/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'onrm2/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'onrm2/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'onrm2/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'onrm2/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'onrm2/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'onrm2/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v2.1.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!--<h1 class="text-light"><a href="index.html"><span>ONRM</span></a></h1>-->
+        <!-- Uncomment below if you prefer to use an image logo -->
+         <a href="{% url 'home' %}"><img src="{% static 'onrm2/img/logo_smallpaint1.png' %}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+                 <li class=""><a href={% url 'home' %}>Inicio</a></li>
+                  <li class="scroll"><a href={% url 'home' %}>Noticias</a></li>
+                  <li class="scroll"><a href={% url 'home' %}>Nosotros</a></li>
+                  <li class="scroll"><a href={% url 'home' %}>Servicios</a></li>
+                  <li class="scroll"><a href={% url 'home' %}">Galeria</a></li>
+                  <li class="drop-down"><a href="">Direcciones</a>
+                <ul>
+                  <li><a href="{% url 'archivo' %}">Archivo Técnico</a></li>
+                  <li><a href="{% url 'registro' %}">Dirección de Registro</a></li>
+                </ul>
+                </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    {% block body %}
+
+
+    {% endblock %}
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Enlances Externos</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://www.cubadebate.cu">Cubadebate</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://www.onrm.minem.cu">ONRM Internet</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://www.onrm.minem.cu">MINEM</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://www.cupet.cu">CUPET</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://www.igp.cu">IGP</a></li>
+            </ul>
+          </div>
+
+           <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Servicios</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de solicitud de dieta</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de alta a nuevos usuarios</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de solicitud de vacaciones</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de movimiento de AFT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contactenos</h4>
+            <p>
+              Calle Calzada 7ma Número 852 <br>
+              entre 4 y 6, Vedado<br>
+              Plaza de la Revolución, La Habana<br><br>
+              <strong>Teléfono:</strong> +53 7833-0540<br>
+              <strong>Correo:</strong> onrm@onrm.minem.cu<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Oficina Nacional de Recursos Minerales</h3>
+            <p>Somos una oficina en constante desarrollo</p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/onrm6?lang=es" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/oficinanacionalrecursosminerales/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href=https://www.instagram.com/onrm55/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/onrm55" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ONRM 2021</span></strong>. Todos los Derechos Reservados
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+         Desarrollado por <a href="https://www.onrm.minem.cu">Revud</a>
+
+
+
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'onrm2/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'onrm2/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'onrm2/vendor/jquery.easing/jquery.easing.min.js'%}"></script>
+  <script src="{% static 'onrm2/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'onrm2/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'onrm2/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'onrm2/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'onrm2/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'onrm2/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'onrm2/vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'onrm2/js/main.js' %}"></script>
+
+</body>
+
+</html>

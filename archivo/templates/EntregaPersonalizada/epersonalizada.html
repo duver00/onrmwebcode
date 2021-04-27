@@ -1,4 +1,4 @@
-{% extends 'onrm/base.html' %}
+{% extends 'onrm2/base2.html' %}
 {% load static %}
 
 {% block body %}
@@ -11,21 +11,26 @@
 
 
 		<link rel="stylesheet" href="{% static 'css/registro.css' %}">
+         <section class="breadcrumbs">
+     <div class="d-flex justify-content-between align-items-center">
+          <h2></h2>
 
+          <ol>
+            <li><a href="{% url 'home' %}" style="color: #856404">Inicio</a></li>
+            <li><a href="{% url 'archivo' %}" style="color: #856404">Archivo Técnico</a></li>
+            <li><a >Entrega Personalizada</a></li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
 
 
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar">
 				<div class="custom-menu">
-					<button type="button" id="sidebarCollapse" class="btn btn-primary">
-	        </button>
+					<button type="button" id="sidebarCollapse" class="btn btn-primary " data-toggle="button" aria-pressed="true"></button>
         </div>
-	  		<div class="img bg-wrap text-center py-4" style="background-image: url('{% static 'images/bg_1.jpg' %}');">
-	  			<div class="user-logo">
-	  				<div class="img" style="background-image: url('{% static 'images/logo.jpg' %}');"></div>
-	  				<h3>Archivo Técnico</h3>
-	  			</div>
-	  		</div>
         <ul class="list-unstyled components mb-5">
           <li class="active">
             <a href="{% url 'archivo' %}"><span class="mr-3"></span>Archivo Técnico</a>
@@ -57,6 +62,5 @@
     <script src="{% static 'vendor/js/jquery.min.js' %}"></script>
      <script src="{% static 'vendor/js/popper.js' %}"></script>
      <script src="{% static 'vendor/js/main.js' %}"></script>
-     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f6d0f0382813800120c318e&product=sticky-share-buttons'
-        async='async'></script>
+
 {% endblock %}
