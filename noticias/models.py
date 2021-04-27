@@ -8,7 +8,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 
 
 class Post(models.Model):
-    titulo = models.CharField(max_length=50, unique=True)
+    titulo = models.CharField(max_length=200, unique=True)
     resumen = models.CharField(max_length=255)
     slug = models.SlugField(max_length=200,unique=True)
     contenido = RichTextUploadingField()

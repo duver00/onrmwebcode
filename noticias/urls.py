@@ -20,8 +20,8 @@ from noticias import views
 urlpatterns = [
 
        path('noticias/', views.PostList.as_view(), name='noticias'),
-       path('<slug:slug>', views.PostDetail.as_view(), name='detalles'),
-       path('buscar/', views.Scanbutton, name='resultados_busqueda'),
+       path('noticias/<slug:slug>', views.PostDetail.as_view(), name='detalles'),
+       path('noticias/buscar/', views.Scanbutton, name='resultados_busqueda'),
        path('', views.Scanbutton, name='error_busqueda')
 
 ]

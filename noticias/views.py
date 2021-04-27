@@ -2,14 +2,14 @@ from django.shortcuts import render
 from .models import Post
 from django.views.generic import DetailView, ListView
 from noticias import models
-from  django.http import HttpResponse
+from django.http import HttpResponse
 # Create your views here.
 
 
 class PostList(ListView):
-    template_name = 'noticias/noticias.html'
+    template_name = 'noticias/noticias_New1.html'
     context_object_name = 'list_news'
-    paginate_by = 3
+    paginate_by = 5
 
     def get_queryset(self):
         return Post.objects.all().order_by('-created')
@@ -17,7 +17,7 @@ class PostList(ListView):
 
 class PostDetail(DetailView):
     model = Post
-    template_name = 'noticias/opennoticias.html'
+    template_name = 'noticias/noticias detalles.html'
     context_object_name = 'noticia'
 
 
@@ -27,7 +27,7 @@ def Scanbutton(request):
 
             titulo = request.GET.get("scan")
             noticias = models.Post.objects.all().filter(titulo__icontains=titulo)
-            return render(request, "noticias/lista_busqueda.html", {"noticias": noticias, "query": titulo})
+            return render(request, "noticias/r_busqueda.html", {"noticias": noticias, "query": titulo})
 
         else:
 

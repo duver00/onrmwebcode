@@ -1,4 +1,4 @@
-{% extends 'onrm/base.html' %}
+{% extends 'onrm2/base2.html' %}
 {% load static %}
 
 {% block body %}
@@ -11,7 +11,17 @@
 
 
 		<link rel="stylesheet" href="{% static 'css/registro.css' %}">
-
+         <section class="breadcrumbs float-right" style="background: transparent">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2></h2>
+              <ol>
+                <li><a href="{% url 'home' %}" style="color: #856404">Inicio</a></li>
+                <li><a href="{% url "registro" %}"style="color: #856404">Registro Minero Petrolero</a></li>
+                <li><a >Minerales y Aguas</a></li>
+              </ol>
+            </div>
+            </div>
+         </section>
 
 
 		<div class="wrapper d-flex align-items-stretch">
@@ -20,15 +30,9 @@
 					<button type="button" id="sidebarCollapse" class="btn btn-primary">
 	        </button>
         </div>
-	  		<div class="img bg-wrap text-center py-4" style="background-image: url('{% static 'images/bg_1.jpg' %}');">
-	  			<div class="user-logo">
-	  				<div class="img" style="background-image: url('{% static 'images/logo.jpg' %}');"></div>
-	  				<h3>Catriona Henderson</h3>
-	  			</div>
-	  		</div>
         <ul class="list-unstyled components mb-5">
           <li class="active">
-            <a href="#"><span class="fa fa-home mr-3"></span>Registro Minero Petrolero</a>
+            <a href="{% url "registro" %}"><span class="fa fa-home mr-3"></span>Registro Minero Petrolero</a>
           </li>
           <li class="active">
               <a href="#homeSubmenu" class="dropdown-toggle mr-3" data-toggle="collapse" aria-expanded="false" >Legislación</a>
@@ -79,6 +83,5 @@
      <script src="{% static 'vendor/js/jquery.min.js' %}"></script>
      <script src="{% static 'vendor/js/popper.js' %}"></script>
      <script src="{% static 'vendor/js/main.js' %}"></script>
-     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f6d0f0382813800120c318e&product=sticky-share-buttons'
-        async='async'></script>
+
 {% endblock %}
