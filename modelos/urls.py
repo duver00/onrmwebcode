@@ -1,4 +1,4 @@
-"""core URL Configuration
+"""modelos URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -13,20 +13,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
 from django.contrib import admin
-from django.urls import path, include
-
+from django.urls import path
+from modelos import views
 
 urlpatterns = [
-        path('admin/', admin.site.urls),
-        path('', include('onrm.urls')),
-        path('', include('noticias.urls')),
-        path('', include('registro.urls')),
-        path('', include('archivo.urls')),
-        path('', include('notificaciones.urls')),
-        path('', include('semana.urls')),
-        path('', include('busqueda_serv.urls')),
-        path('', include('galeria.urls')),
-        path('', include('modelos.urls')),
+    path('solicitudp/', views.SolicitudpFormView.as_view(), name='solicitudp'),
+    path('modelop/', views.solicitud_pago, name='pagobutton'),
+    path('modeloaft/', views.MovimientoFormView.as_view(), name='modeloaft'),
+    path('modelom/', views.modelo_aft, name='aftbutton'),
 ]

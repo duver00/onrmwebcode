@@ -50,19 +50,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modelos/templates/AFT" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Dev\Proyectos\Django\onrm\registro\templates\legislacion" />
-      <recent name="D:\Dev\Proyectos\Django\onrm\registro\templates" />
-      <recent name="D:\Dev\Proyectos\Django\onrm\registro" />
-      <recent name="D:\Dev\Proyectos\Django\onrm\registro\static\vendor" />
-      <recent name="D:\Dev\Proyectos\Django\onrm\registro\static\vendor\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\Proyectos\Django\onrm\modelos\templates\AFT" />
+      <recent name="D:\Dev\Proyectos\Django\onrm\modelos" />
       <recent name="D:\Dev\Proyectos\Django\onrm\noticias\templates\noticias" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\Proyectos\Django\onrm\modelos\templates" />
+      <recent name="D:\Dev\Proyectos\Django\onrm\modelos\templates\Pago" />
+      <recent name="D:\Dev\Proyectos\Django\onrm\modelos\static\images" />
+      <recent name="D:\Dev\Proyectos\Django\onrm\modelos\static" />
+      <recent name="D:\Dev\Proyectos\Django\onrm\registro\templates\legislacion" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.onrm">
@@ -192,6 +194,13 @@
       <workItem from="1616734756417" duration="168000" />
       <workItem from="1619576716017" duration="4945000" />
       <workItem from="1619725002137" duration="157000" />
+      <workItem from="1620860560174" duration="1523000" />
+      <workItem from="1620862375857" duration="747000" />
+      <workItem from="1620863358680" duration="115000" />
+      <workItem from="1620863535575" duration="275000" />
+      <workItem from="1620869114599" duration="25041000" />
+      <workItem from="1620952495204" duration="17163000" />
+      <workItem from="1621051631495" duration="32818000" />
     </task>
     <servers />
   </component>
@@ -199,48 +208,54 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="152" key="GridCell.Tab.0.bottom" timestamp="1619656732388">
+    <state width="1323" height="127" key="GridCell.Tab.0.bottom" timestamp="1621395600741">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="150" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616635723419" />
-    <state width="1323" height="152" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619656732388" />
+    <state width="1323" height="127" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1621395600741" />
     <state width="1877" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1616432723222" />
-    <state width="1323" height="152" key="GridCell.Tab.0.center" timestamp="1619656732387">
+    <state width="1877" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849572" />
+    <state width="1323" height="127" key="GridCell.Tab.0.center" timestamp="1621395600741">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="150" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1616635723419" />
-    <state width="1323" height="152" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619656732387" />
+    <state width="1323" height="127" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1621395600741" />
     <state width="1877" height="239" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1616432723222" />
-    <state width="1323" height="152" key="GridCell.Tab.0.left" timestamp="1619656732387">
+    <state width="1877" height="204" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849571" />
+    <state width="1323" height="127" key="GridCell.Tab.0.left" timestamp="1621395600741">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="150" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1616635723419" />
-    <state width="1323" height="152" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619656732387" />
+    <state width="1323" height="127" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1621395600741" />
     <state width="1877" height="239" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1616432723222" />
-    <state width="1323" height="152" key="GridCell.Tab.0.right" timestamp="1619656732387">
+    <state width="1877" height="204" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849499" />
+    <state width="1323" height="127" key="GridCell.Tab.0.right" timestamp="1621395600741">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="150" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1616635723419" />
-    <state width="1323" height="152" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619656732387" />
+    <state width="1323" height="127" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1621395600741" />
     <state width="1877" height="239" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1616432723222" />
-    <state x="379" y="200" key="com.intellij.ide.util.TipDialog" timestamp="1619725013351">
+    <state width="1877" height="204" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849572" />
+    <state x="379" y="200" key="com.intellij.ide.util.TipDialog" timestamp="1621051664389">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="379" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1616635431127" />
-    <state x="379" y="200" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1619725013351" />
+    <state x="379" y="200" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1621051664389" />
     <state x="533" y="282" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616429782456" />
-    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616022613255">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621395671998">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1616022613255" />
+    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1621395671998" />
     <state x="434" y="218" width="948" height="376" key="dock-window-1" timestamp="1612471867700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="434" y="218" width="948" height="376" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1612471867700" />
-    <state x="346" y="84" width="672" height="643" key="search.everywhere.popup" timestamp="1616037503220">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="346" y="85" width="672" height="652" key="search.everywhere.popup" timestamp="1621395330077">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="346" y="84" width="672" height="643" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1616037503220" />
+    <state x="346" y="85" width="672" height="652" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1621395330077" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
