@@ -55,10 +55,10 @@
           <li class="scroll"><a href="#nosotros">Nosotros</a></li>
           <li class="scroll"><a href="#servicios">Servicios</a></li>
           <li class="scroll"><a href="#galeria">Galeria</a></li>
-          <li class="drop-down"><a href="">Direcciones</a>
+          <li class="drop-down disabled"><a aria-disabled="true" href="" >Usuario</a>
             <ul>
-              <li><a href="{% url 'archivo' %}">Archivo Técnico</a></li>
-              <li><a href="{% url 'registro' %}">Dirección de Registro</a></li>
+              <li><a  href="{% url 'home' %}">Entrar</a></li>
+              <li><a  href="{% url 'home' %}">Registrar</a></li>
             </ul>
           </li>
         </ul>
@@ -84,9 +84,9 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box icon-box-pink">
-              <div class="icon"><i class="bx bx-book"></i></div>
-              <h4 class="title"><a href="{% url 'telefonico' %}">Directorio</a></h4>
-              <p class="description">Acceda al directorio telefónico de la ONRM</p>
+              <div class="icon"><i class="bx bx-search"></i></div>
+              <h4 class="title"><a href="{% url 'telefonico' %}">Búsqueda Referativa</a></h4>
+              <p class="description">Sistema de búsqueda referativa accesible en modo web, dando más acceso a la información</p>
             </div>
           </div>
 
@@ -110,7 +110,7 @@
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4 class="title"><a href="ftp://192.168.10.24/">Expedientes</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <p class="description">FTP disponible con los expedientes de los derechos mineros otorgados en la entidad</p>
             </div>
           </div>
 
@@ -244,7 +244,7 @@
           </div>
           <!-- title & date -->
           <div class="col-9 col-md-8">
-            <div class="card-body pt-0">
+            <div class="card-body pt-1">
               <h3 class="card-title h6 h5-sm h6-lg">
                 <a href="{{ primero.get_absolute_url }}">{{primero.titulo}}</a>
               </h3>
@@ -272,7 +272,7 @@
           </div>
           <div class="col-9 col-md-8">
             <!-- title & date -->
-            <div class="card-body pt-0">
+            <div class="card-body pt-1">
               <h3 class="card-title h6 h5-sm h6-lg">
                 <a href="{{ segundo.get_absolute_url }}">{{ segundo.titulo }}</a>
               </h3>
@@ -300,7 +300,7 @@
           </div>
           <!-- title & date -->
           <div class="col-9 col-md-8">
-            <div class="card-body pt-0">
+            <div class="card-body pt-1">
               <h3 class="card-title h6 h5-sm h6-lg">
                 <a href="{{ tercero.get_absolute_url }}">{{ tercero.titulo }}</a>
               </h3>
@@ -328,7 +328,7 @@
           </div>
           <!-- title & date -->
           <div class="col-9 col-md-8">
-            <div class="card-body pt-0">
+            <div class="card-body pt-1">
               <h3 class="card-title h6 h5-sm h6-lg">
                 <a href="{{ cuarto.get_absolute_url }}">{{ cuarto.titulo }}</a>
               </h3>
@@ -406,7 +406,7 @@
           <div class="col-lg-3 col-md-6 footer-links">
         <h4>Servicios</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de solicitud de dieta</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'solicitudp' %}">Modelo de solicitud de pago</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de alta a nuevos usuarios</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de solicitud de vacaciones</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de movimiento de AFT</a></li>

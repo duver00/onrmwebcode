@@ -1,0 +1,65 @@
+
+{% block body %}
+{% load materializecss %}
+ {% block css %}
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.min.css" integrity="sha256-qj3p6P1fJIV+Ndv7RW1ovZI2UhOuboj9GcODzcNFIN8=" crossorigin="anonymous" />
+{% endblock css %}
+    <nav class="nav-wrapper center-align" style="background-color: #0d2735">
+        <div class="left" >
+             <a class="brand-logo right"><i class="material-icons">format_shapes</i>ModelGeNeRaToR</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+        <ul class="right hide-on-med-and-down">
+          <li class=""><a href="{% url 'home' %}">Intranet</a></li>
+          <li ><a href="{% url 'solicitudp' %}">Solicitud  de pago</a></li>
+          <li ><a href="{% url 'modeloaft' %}">Modelo de movimiento AFT</a></li>
+          <li ><a href="#">Modelo de vacaciones</a></li>
+        </ul>
+       </div>
+        <ul class="sidenav" id="mobile-links">
+          <li class=""><a href="{% url 'home' %}">Intranet</a></li>
+          <li ><a href="{% url 'solicitudp' %}">Solicitud  de pago</a></li>
+          <li ><a href="{% url 'modeloaft' %}">Modelo de movimiento AFT</a></li>
+          <li ><a href="#">Modelo de vacaciones</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    <form  class="center container ali " method="post" action="{% url 'pagobutton' %}">{% csrf_token %}
+       {{form|materializecss}}
+        <button type="submit" class="waves-effect waves-light btn-small pulse">Generar</button>
+    </form>
+     <p> <br>
+    </p>
+   <div class=" center footer-copyright">
+       <div class="copyright">
+        &copy;Copyright <strong><span>ONRM 2021</span></strong>.Todos los Derechos Reservados
+      </div>
+      <div class="credits"> Desarrollado por <a href="https://facebook.com/duver00">Revud</a></div>
+    </div>
+  </footer>
+{% endblock body%}
+{% block javascript %}
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/js/materialize.min.js" integrity="sha256-SrBfGi+Zp2LhAvy9M1bWOCXztRU9Ztztxmu5BcYPcPE=" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+
+  // Initialize materialize data picker
+  $('.datepicker').datepicker({'format': 'yyyy-mm-dd'});
+  $('select').formSelect();
+
+});
+</script>
+<script>
+$(document).ready(function () {
+    $('.sidenav').sidenav();
+
+})
+</script>
+
+{% endblock javascript%}
