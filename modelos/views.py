@@ -2,8 +2,6 @@ from django.shortcuts import render, HttpResponse, redirect
 from django.views.generic.edit import FormView, View
 from .forms import SolicitudP, MovimientoAFT
 from django.template.loader import get_template
-# import render_to_pdf from util.py
-from .utils import render_to_pdf
 # Create your views here.
 
 
@@ -26,7 +24,7 @@ def solicitud_pago(request):
             concepto = form.cleaned_data['concepto']
             paguese = form.cleaned_data['paguese']
             importe = form.cleaned_data['importe']
-            solicita =form.cleaned_data['solicita']
+            solicita =  form.cleaned_data['solicita']
             # redirect to a new URL:
             return render(request, 'Pago/moldelop2.htm', {'departamento':departamento, 'fechaemision':fechaemision,
                                                              'concepto':concepto,'paguese':paguese,'importe':importe,

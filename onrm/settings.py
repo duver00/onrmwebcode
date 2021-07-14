@@ -16,7 +16,6 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -27,7 +26,6 @@ SECRET_KEY = 'r=qg1x%d5$14l9&7n@ug^bts@m5z27z-+x3k)8r8j%r&)t&k6%'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -51,6 +49,7 @@ INSTALLED_APPS = [
     'galeria',
     'modelos',
     'materializecssform',
+
 ]
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
@@ -85,23 +84,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'onrm.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-        'default': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'onrmdb',
         'USER': 'postgres',
-        'PASSWORD': '',
+        'PASSWORD': 'libercuba',
         'HOST': '127.0.0.1',
-        'DATABASE_PORT': '5433',
+        'DATABASE_PORT': '5432',
 
     }
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -121,11 +117,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-#LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'es-eu'
 
 TIME_ZONE = 'UTC'
@@ -136,7 +131,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
@@ -146,5 +140,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
-
-
