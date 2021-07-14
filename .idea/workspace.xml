@@ -1211,6 +1211,7 @@
       <workItem from="1626142470413" duration="905000" />
       <workItem from="1626153192908" duration="7100000" />
       <workItem from="1626220022881" duration="3677000" />
+      <workItem from="1626284259602" duration="379000" />
     </task>
     <servers />
   </component>
@@ -1239,10 +1240,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="actualizado el requirement&#10;actualizado los paquetes&#10;actualizado el index" />
-    <option name="LAST_COMMIT_MESSAGE" value="actualizado el requirement&#10;actualizado los paquetes&#10;actualizado el index" />
+    <MESSAGE value="update django" />
+    <option name="LAST_COMMIT_MESSAGE" value="update django" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Notifications" timestamp="1626027160927">
