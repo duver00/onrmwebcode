@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: #fff;
   padding: 10px 15px;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: #1e4356;
+  background: black;
   transition: 0.4s;
 }
 
@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: 50%;
   top: 0;
   width: 130%;
-  height: 95%;
+  height: 100%;
   background: linear-gradient(to right, rgba(184, 134, 11, 0.8), rgba(184, 134, 11, 0.6)), url("../img/front3.jpg") center top no-repeat;
   z-index: 0;
   border-radius: 0 0 50% 50%;

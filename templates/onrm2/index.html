@@ -55,7 +55,7 @@
           <li class="scroll"><a href="#nosotros">Nosotros</a></li>
           <li class="scroll"><a href="#servicios">Servicios</a></li>
           <li class="scroll"><a href="#galeria">Galeria</a></li>
-          <li class="drop-down disabled"><a aria-disabled="true" href="" >Usuario</a>
+          <li class="drop-down disabled"><a aria-disabled="true" href="" ><i class="bx bx-user"></i></a>
             <ul>
               <li><a  href="{% url 'home' %}">Entrar</a></li>
               <li><a  href="{% url 'home' %}">Registrar</a></li>
@@ -68,7 +68,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-    <section id="hero" class="img-fluid">
+    <section id="hero" class="img-fluid" >
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
 
 
@@ -108,13 +108,11 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-blue">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="ftp://192.168.10.24/">Expedientes</a></h4>
+              <div class="icon"><i class="bx bxs-analyse"></i></div>
+              <h4 class="title"><a href="{% url 'solicitudp' %}">Modelos</a></h4>
               <p class="description">FTP disponible con los expedientes de los derechos mineros otorgados en la entidad</p>
             </div>
           </div>
-
-        </div>
 
       </div>
     </section><!-- End Services Section -->
@@ -404,13 +402,13 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-        <h4>Servicios</h4>
+        <h4>Documentos ONRM</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'solicitudp' %}">Modelo de solicitud de pago</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de alta a nuevos usuarios</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de solicitud de vacaciones</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Modelo de movimiento de AFT</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'solicitudp' %}">Manual de Procedimiento Minero</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Manual de identidad</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan de Seguridad Informática</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan de Gestión de Riesgos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Guía de Autocontrol</li>
             </ul>
 
           </div>
