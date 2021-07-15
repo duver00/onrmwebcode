@@ -1,4 +1,24 @@
 {% load materializecss %}
+   <nav class="nav-wrapper" style="background-color: #0d2735">
+        <div class="left    " >
+            <a class="brand-logo right"><i class="material-icons">format_shapes</i>ModelGeNeRaToR</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+        <ul class="right hide-on-med-and-down">
+          <li class=""><a href="{% url 'home' %}">Intranet</a></li>
+          <li ><a href="{% url 'solicitudp' %}">Solicitud  de pago</a></li>
+          <li ><a href="{% url 'modeloaft' %}">Movimiento AFT</a></li>
+          <li ><a href="#">Modelo de vacaciones</a></li>
+        </ul>
+       </div>
+        <ul class="sidenav" id="mobile-links">
+          <li class=""><a href="{% url 'home' %}">Intranet</a></li>
+          <li ><a href="{% url 'solicitudp' %}">Solicitud  de pago</a></li>
+          <li ><a href="{% url 'modeloaft' %}">Movimiento AFT</a></li>
+          <li ><a href="#">Modelo de vacaciones</a></li>
+        </ul>
+     </nav>
 <!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="todo" xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"

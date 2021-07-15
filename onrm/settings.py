@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'registro',
     'ckeditor',
     'ckeditor_uploader',
-    'archivo',
     'notificaciones',
     'semana',
     'busqueda_serv',

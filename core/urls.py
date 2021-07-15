@@ -23,7 +23,6 @@ urlpatterns = [
         path('', include('onrm.urls')),
         path('', include('noticias.urls')),
         path('', include('registro.urls')),
-        path('', include('archivo.urls')),
         path('', include('notificaciones.urls')),
         path('', include('semana.urls')),
         path('', include('busqueda_serv.urls')),
