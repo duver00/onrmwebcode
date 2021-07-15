@@ -1,7 +1,6 @@
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import render
 from django.views.generic.edit import FormView, View
 from .forms import SolicitudP, MovimientoAFT
-from django.template.loader import get_template
 # Create your views here.
 
 

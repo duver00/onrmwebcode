@@ -19,45 +19,17 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/work" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:work" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="actualizado el requirement&#10;actualizado los paquetes&#10;actualizado el index">
+    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="eliminado archivo y onrm index">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/css/archivo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/css/bootstrap/_media.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/css/bootstrap/mixins/_border-radius.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/css/bootstrap/mixins/_screen-reader.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/css/bootstrap/mixins/_visibility.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/css/bootstrap/utilities/_stretched-link.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/images/bg_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/images/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/vendor/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/vendor/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/vendor/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/vendor/js/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/static/vendor/js/popper.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/templates/ConsultaP/consultap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/templates/EntregaP/epresencial.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/templates/EntregaPersonalizada/epersonalizada.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/templates/archivo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onrm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/onrm/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/onrm/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelos/templates/AFT/modelom.htm" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/templates/AFT/modelom.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelos/templates/Pago/moldelop2.htm" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/templates/Pago/moldelop2.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +64,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="zipChanges" value="false" />
@@ -286,7 +259,8 @@
       <workItem from="1626142470413" duration="905000" />
       <workItem from="1626153192908" duration="7100000" />
       <workItem from="1626220022881" duration="3677000" />
-      <workItem from="1626284259602" duration="1627000" />
+      <workItem from="1626284259602" duration="2275000" />
+      <workItem from="1626297918432" duration="2698000" />
     </task>
     <task id="LOCAL-00001" summary="update django">
       <created>1626284719915</created>
@@ -302,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626284761725</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="eliminado archivo y onrm index">
+      <created>1626285929625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626285929625</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +300,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/work" />
+                        <option value="work" />
                       </list>
                     </value>
                   </entry>
@@ -335,7 +316,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="actualizado el requirement&#10;actualizado los paquetes&#10;actualizado el index" />
     <MESSAGE value="update django" />
-    <option name="LAST_COMMIT_MESSAGE" value="update django" />
+    <MESSAGE value="eliminado archivo y onrm index" />
+    <option name="LAST_COMMIT_MESSAGE" value="eliminado archivo y onrm index" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Notifications" timestamp="1626027160927">
@@ -354,37 +336,41 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="402" y="0" key="#onrm/0.0.1366.738@0.0.1366.738" timestamp="1626054192486" />
-    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1626285231220">
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1626286364870">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1626285231220" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1626286364870" />
     <state x="413" y="50" key="FileChooserDialogImpl" timestamp="1626285898045">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="50" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1626285898045" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1626285498685">
+    <state x="465" y="236" key="Github.CreatePullRequestDialog" timestamp="1626286363170">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="465" y="236" key="Github.CreatePullRequestDialog/0.0.1366.738@0.0.1366.738" timestamp="1626286363170" />
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1626304982974">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.bottom/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1626285498685" />
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1626304982974" />
     <state width="1877" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849572" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1626285498685">
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1626304982974">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.center/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1626285498685" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1626304982974" />
     <state width="1877" height="204" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849571" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1626285498685">
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1626304982973">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.left/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1626285498685" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1626304982973" />
     <state width="1877" height="204" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849499" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1626285498685">
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1626304982974">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.right/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1626285498685" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1626304982974" />
     <state width="1877" height="204" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849572" />
     <state x="103" y="0" key="SettingsEditor" timestamp="1626054470638">
       <screen x="0" y="0" width="1366" height="738" />
@@ -394,10 +380,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1626284905320" />
-    <state x="427" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1626285891231">
+    <state x="427" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1626286069839">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="427" y="103" key="VcsDiffUtil.ChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1626285891231" />
+    <state x="427" y="103" key="VcsDiffUtil.ChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1626286069839" />
+    <state x="350" y="98" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1626286356707">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="350" y="98" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1366.738@0.0.1366.738" timestamp="1626286356707" />
     <state x="379" y="200" key="com.intellij.ide.util.TipDialog" timestamp="1626040837302">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -407,14 +397,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="527" y="103" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.738@0.0.1366.738" timestamp="1626284438899" />
-    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621395671998">
+    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626286143413">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1621395671998" />
-    <state x="346" y="85" width="672" height="652" key="search.everywhere.popup" timestamp="1621395330077">
+    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1626286143413" />
+    <state x="484" y="157" key="git4idea.merge.GitMergeDialog" timestamp="1626286220803">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="85" width="672" height="652" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1621395330077" />
+    <state x="484" y="157" key="git4idea.merge.GitMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1626286220803" />
+    <state x="346" y="85" width="672" height="652" key="search.everywhere.popup" timestamp="1626286314558">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="85" width="672" height="652" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1626286314558" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
