@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'galeria',
     'modelos',
     'materializecssform',
+    'eventos'
 
 ]
 CKEDITOR_UPLOAD_PATH = "uploads/"
