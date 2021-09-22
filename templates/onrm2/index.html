@@ -24,6 +24,8 @@
   <link href="{% static 'onrm2/vendor/venobox/venobox.css' %}" rel="stylesheet">
   <link href="{% static 'onrm2/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
   <link href="{% static 'onrm2/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'css/events.css' %}" rel="stylesheet">
+
 
   <!-- Template Main CSS File -->
   <link href="{% static 'onrm2/css/style.css' %}" rel="stylesheet">
@@ -118,78 +120,39 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Why Us Section ======= -->
+  <div class="wrapper">
 
+	<h1 class="section-title"><span>Eventos</span></h1>
 
-    <!-- ======= Features Section ======= -->
-    <section id = "nosotros" class="features">
-      <div class="container">
+	<!-- first item, not featured, no date range -->
+   {% for evento in eventos %}
+    <div class="event-list-item navy">
+		<div class="event-info">
 
-        <div class="section-title" id="nosotros">
-          <h2>Nosotros</h2>
-         </div>
+			<div class="event-date">
+				<p class="event-start">{{evento.fecha_evento.day}}<br>{{ evento.fecha_evento|date:'M'}}</p>
+			</div>
+			<div class="event-description">
+				<div class="event-header">
+					<a href="#"><h1 class="event-title">{{ evento.titulo|title }}</h1></a>
+					<p class="event-location">{{ evento.lugar_evento}}</p>
+					<p class="event-time">{{ evento.hora }}</p>
+				</div>
+				<div class="event-excerpt">
+					<p>Monotonectally provide access to sticky web-readiness without inexpensive e-commerce. Conveniently promote real-time e-tailers for team building paradigms. Synergistically leverage other's equity invested ROI via client-based schemas...</p>
+				</div>
+			</div>
+		</div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="{% static 'onrm2/img/ley (1).svg' %}" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-4">
-            <h3>Funciones</h3>
+	</div>
+{% endfor %}
+</div>
 
-            <ul>
-              <li><i class="icofont-check"></i> Controlar y fiscalizar la actividad minera y el uso racional de los recursos minerales.</li>
-              <li><i class="icofont-check"></i>Controlar y fiscalizar las actividades de exploración y producción de petróleo y gas.</li>
-              <li><i class="icofont-check"></i>Conferir las licencias y permisos para la ejecución de las actividades petroleras en su esfera de competencia.</li>
-              <li><i class="icofont-check"></i>Asesorar sobre las actividades mineras, de exploración y producción de hidrocarburos.</li>
-              <li><i class="icofont-check"></i>Administrar los registros minero y petrolero y mantener actualizadas las anotaciones sobre las concesiones mineras, áreas mineras reservadas, los contratos de exploración y producción de petróleo, yacimientos, manifestaciones minerales y de hidrocarburos, áreas en investigación y minas así como pozos de hidrocarburos en explotación o abandonados.</li>
-             </ul>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="{% static 'onrm2/img/mineria.svg' %}" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Misión y Visión</h3>
-            <br class="font-italic ">
-                <br></br>
-              Misión
-            <ul>
-             <li><i class="icofont-check"></i> Garantizar la explotación y uso racional de los recursos minerales.</li>
-             <br class="font-italic">
-              <br></br>
-              Visión
-             <li><i class="icofont-check"></i>Lograr que los Recursos Minerales del país sean usados de forma racional y sostenible.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="{% static 'onrm2/img/ley.svg' %}" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5">
-            <h3>Funciones</h3>
-
-            <ul>
-              <li><i class="icofont-check"></i> Dictaminar y aprobar los proyectos de investigación geológica, explotación y procesamiento, según corresponda, de minas, aguas minerales, fangos medicinales, salinas e hidrocarburos.</li>
-              <li><i class="icofont-check"></i> Constituirse en depositario de la información geológica, minera y petrolera de la nación; recibir, organizar y conservar la información, así como garantizar el acceso a la misma cuando se requiera.</li>
-              <li><i class="icofont-check"></i> Calificar a las compañías petroleras y mineras extranjeras interesadas en realizar actividades de exploración y explotación de hidrocarburos y minerales en la República de Cuba.</li>
-            </ul>
-          </div>
-        </div>
-
-       </div>
-    </section><!-- End Features Section -->
-
-  </main><!-- End #main -->
   <!---Noticias-->
 <section id = "noticias" class="mx-auto w-75">    <!--Block start-->
 <div class="container-fluid">
   <!-- block title -->
-  <div class="section-title" id="news   ">
-          <h2>Noticias</h2>
-         </div>
+  <h1 class="section-title"><span>Noticias</span></h1>
 
   <!--big post start-->
   <div class="big-post">
@@ -198,7 +161,7 @@
         <div class="col-lg-6">
           <!-- thumbnail -->
           <div class="ratio_360-202 image-wrapper">
-            <a href="now.get_absolute_url }}">
+            <a href="{{now.get_absolute_url }}">
               <img class="img-fluid lazy" src="{{ now.imagen.url }}" data-src="{{ now.imagen.url }}" alt="Image description">
             </a>
           </div>
@@ -243,7 +206,7 @@
           <!-- title & date -->
           <div class="col-9 col-md-8">
             <div class="card-body pt-1">
-              <h3 class="card-title h6 h5-sm h6-lg">
+              <h3 class="card-title h6 h6-sm h6-lg">
                 <a href="{{ primero.get_absolute_url }}">{{primero.titulo}}</a>
               </h3>
               <div class="card-text small text-muted">
@@ -299,7 +262,7 @@
           <!-- title & date -->
           <div class="col-9 col-md-8">
             <div class="card-body pt-1">
-              <h3 class="card-title h6 h5-sm h6-lg">
+              <h3 class="card-title h6 h6-sm h6-lg">
                 <a href="{{ tercero.get_absolute_url }}">{{ tercero.titulo }}</a>
               </h3>
               <div class="card-text small text-muted">
@@ -327,7 +290,7 @@
           <!-- title & date -->
           <div class="col-9 col-md-8">
             <div class="card-body pt-1">
-              <h3 class="card-title h6 h5-sm h6-lg">
+              <h3 class="card-title h5 h5-sm h6-lg">
                 <a href="{{ cuarto.get_absolute_url }}">{{ cuarto.titulo }}</a>
               </h3>
               <div class="card-text small text-muted">
@@ -347,9 +310,7 @@
 <!--Galeria ONRM-->
    <section class="portfolio" id="galeria" style="text-align: center">
         <div class="container">
-        <div class="section-title" id="galeria">
-          <h2>Galeria</h2>
-         </div>
+         <h1 class="section-title"><span>Galeria</span></h1>
 
 
           <div class="row">
@@ -412,20 +373,19 @@
             </ul>
 
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contáctenos</h4>
-            <p>
-              Calle Calzada 7ma Número 852 <br>
-              entre 4 y 6, Vedado<br>
-              Plaza de la Revolución, La Habana<br><br>
-              <strong>Teléfono:</strong> +53 7833-0540<br>
-              <strong>Correo:</strong> onrm@onrm.minem.cu<br>
-            </p>
+            <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Control Internos</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'solicitudp' %}">Manual de Procedimiento Minero</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Manual de identidad</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan de Seguridad Informática</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan de Gestión de Riesgos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Guía de Autocontrol</li>
+            </ul>
 
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-info">
+           <div class="col-lg-3 col-md-6 footer-info">
             <h3>Oficina Nacional de Recursos Minerales</h3>
             <p>Somos una oficina en constante desarrollo</p>
             <div class="social-links mt-3">
@@ -444,7 +404,7 @@
        <div class="copyright">
         &copy; Copyright <strong><span>ONRM 2021</span></strong>.Todos los Derechos Reservados
       </div>
-      <div class="credits"> Desarrollado por <a href="https://facebook.com/duver00">Revud</a>
+      <div class="credits"> Desarrollado por <a href="https://www.linkedin.com/in/diosvelis-duvergel-chib%C3%A1s-4a8595119/">Revud</a>
         <p>Actualizado {{ now.created|date }}</p>
       </div>
     </div>

@@ -25,11 +25,23 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="eliminado archivo y onrm index">
+    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="actualizado los modelos con su navbar">
+      <change afterPath="$PROJECT_DIR$/eventos/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/migrations/0002_eventosmodel_hora.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/migrations/0003_alter_eventosmodel_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/migrations/0004_alter_eventosmodel_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/onrm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/onrm.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelos/templates/AFT/modelom.htm" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/templates/AFT/modelom.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelos/templates/Pago/moldelop2.htm" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/templates/Pago/moldelop2.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelos/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelos/templates/AFT/formulariom.html" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/templates/AFT/formulariom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelos/templates/Pago/formulariop.html" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/templates/Pago/formulariop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onrm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onrm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/onrm2/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onrm2/base2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/onrm2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onrm2/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +76,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="zipChanges" value="false" />
@@ -82,15 +93,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DEV\Proyectos\Django\onrm\onrm\static\css" />
       <recent name="D:\Dev\Proyectos\Django\onrm\modelos\templates" />
       <recent name="D:\Dev\Proyectos\Django\onrm\modelos\templates\Pago" />
       <recent name="D:\Dev\Proyectos\Django\onrm\modelos\static\images" />
       <recent name="D:\Dev\Proyectos\Django\onrm\modelos\static" />
-      <recent name="D:\Dev\Proyectos\Django\onrm\registro\templates\legislacion" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Dev\Proyectos\Django\onrm\modelos\templates\AFT" />
@@ -260,7 +271,13 @@
       <workItem from="1626153192908" duration="7100000" />
       <workItem from="1626220022881" duration="3677000" />
       <workItem from="1626284259602" duration="2275000" />
-      <workItem from="1626297918432" duration="2698000" />
+      <workItem from="1626297918432" duration="3853000" />
+      <workItem from="1628313035177" duration="159000" />
+      <workItem from="1628571200563" duration="523000" />
+      <workItem from="1631825762687" duration="1887000" />
+      <workItem from="1631908507125" duration="307000" />
+      <workItem from="1631918957602" duration="667000" />
+      <workItem from="1632242652884" duration="17472000" />
     </task>
     <task id="LOCAL-00001" summary="update django">
       <created>1626284719915</created>
@@ -283,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626285929625</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="actualizado los modelos con su navbar">
+      <created>1626326947392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626326947392</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,17 +341,18 @@
     <MESSAGE value="actualizado el requirement&#10;actualizado los paquetes&#10;actualizado el index" />
     <MESSAGE value="update django" />
     <MESSAGE value="eliminado archivo y onrm index" />
-    <option name="LAST_COMMIT_MESSAGE" value="eliminado archivo y onrm index" />
+    <MESSAGE value="actualizado los modelos con su navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="actualizado los modelos con su navbar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Notifications" timestamp="1626027160927">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1626027160927" />
-    <state x="137" y="17" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626220938717">
+    <state x="137" y="17" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631922403321">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="137" y="17" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1626220938717" />
+    <state x="137" y="17" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1631922403321" />
     <state x="363" y="105" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1626157958139">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -348,38 +373,39 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="465" y="236" key="Github.CreatePullRequestDialog/0.0.1366.738@0.0.1366.738" timestamp="1626286363170" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1626304982974">
+    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1632264728348">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.bottom/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1626304982974" />
-    <state width="1877" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849572" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1626304982974">
+    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632264728348" />
+    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1631832175867" />
+    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1632264728348">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.center/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1626304982974" />
-    <state width="1877" height="204" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849571" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1626304982973">
+    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632264728348" />
+    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1631832175867" />
+    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1632264728347">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.left/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1626304982973" />
-    <state width="1877" height="204" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849499" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1626304982974">
+    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632264728347" />
+    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1631832175867" />
+    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1632264728348">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.right/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1626304982974" />
-    <state width="1877" height="204" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1621004849572" />
-    <state x="103" y="0" key="SettingsEditor" timestamp="1626054470638">
+    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632264728348" />
+    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1631832175867" />
+    <state x="103" y="0" key="SettingsEditor" timestamp="1632262385215">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="103" y="0" key="SettingsEditor/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632262385215" />
     <state x="103" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1626054470638" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1626284905320">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1626327335889">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1626284905320" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1626327335889" />
     <state x="427" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1626286069839">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -391,16 +417,15 @@
     <state x="379" y="200" key="com.intellij.ide.util.TipDialog" timestamp="1626040837302">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="358" y="208" key="com.intellij.ide.util.TipDialog/0.0.1292.768@0.0.1292.768" timestamp="1621657952126" />
     <state x="379" y="200" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1626040837302" />
     <state x="527" y="103" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1626284438899">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="527" y="103" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.738@0.0.1366.738" timestamp="1626284438899" />
-    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626286143413">
+    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626327187141">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1626286143413" />
+    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1626327187141" />
     <state x="484" y="157" key="git4idea.merge.GitMergeDialog" timestamp="1626286220803">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

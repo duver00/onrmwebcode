@@ -2,6 +2,7 @@ from django.shortcuts import render
 from datetime import datetime
 from noticias.models import Post
 from galeria.models import Imagenes
+from eventos.models import EventosModel
 
 
 # Create your views here.
@@ -16,8 +17,10 @@ def home(request):
     imagenes = Imagenes.objects.all().order_by('-created')
     now = Post.objects.all().last()
     todos = Post.objects.all()
+    eventos = EventosModel.objects.all().order_by('fecha_evento')
     return render(request, 'onrm2/index.html', {'titulo0': slidesnews0, 'titulo1': slidesnews1, 'titulo2': slidesnews2,
-                                                'titulo3':slidesnews3,'now': now,'todos':todos,'imagenes':imagenes})
+                                                'titulo3':slidesnews3,'now': now,'todos':todos,'imagenes':imagenes,
+                                                'eventos':eventos})
 
 
 def base(request):

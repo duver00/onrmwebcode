@@ -1,11 +1,12 @@
 from django import forms
+from django.forms.widgets import SelectDateWidget
 
 #Code below
 
 
 class SolicitudP(forms.Form):
     departamento = forms.CharField(max_length=30, required=True, label= "Dirección")
-    fechaemision = forms.DateField(required=True, label="Fecha de solicitud")
+    fechaemision = forms.DateField(required=True, label="Fecha de solicitud",widget=forms.SelectDateWidget)
     concepto = forms.CharField(widget=forms.Textarea, required=True)
     paguese = forms.CharField(max_length=50, required=True, label="Páguese a")
     importe = forms.DecimalField(decimal_places=2,required=True, label="Importe total")
@@ -18,7 +19,7 @@ class MovimientoAFT(forms.Form):
     descripcion = forms.CharField(label="Descripción del medio", required=True)
     direccion_receptor = forms.CharField(label="Dirección del receptor", required=True)
     area_receptor = forms.CharField(label="Area del receptor", required=True)
-    fecha = forms.DateField(label="Fecha de movimiento", required=True)
+    fecha = forms.DateField(label="Fecha de movimiento", required=True,widget=SelectDateWidget)
     nombre_tecnico = forms.CharField(label="Nombre del técnico", required=False)
     cargo_tecnico = forms.CharField(label="Cargo del técnico", required=False)
     autorizado_cargo = forms.CharField(label="Autoriza")
