@@ -25,23 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="actualizado los modelos con su navbar">
-      <change afterPath="$PROJECT_DIR$/eventos/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/migrations/0002_eventosmodel_hora.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/migrations/0003_alter_eventosmodel_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/migrations/0004_alter_eventosmodel_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/onrm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/onrm.iml" afterDir="false" />
+    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="agregado app eventos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelos/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelos/templates/AFT/formulariom.html" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/templates/AFT/formulariom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelos/templates/Pago/formulariop.html" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/templates/Pago/formulariop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onrm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onrm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/onrm2/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onrm2/base2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/onrm2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onrm2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/sqlparse/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/sqlparse/filters/others.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse/filters/others.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/sqlparse/keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse/keywords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/sqlformat.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/sqlformat.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +83,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -277,7 +267,7 @@
       <workItem from="1631825762687" duration="1887000" />
       <workItem from="1631908507125" duration="307000" />
       <workItem from="1631918957602" duration="667000" />
-      <workItem from="1632242652884" duration="17472000" />
+      <workItem from="1632242652884" duration="18087000" />
     </task>
     <task id="LOCAL-00001" summary="update django">
       <created>1626284719915</created>
@@ -307,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626326947392</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="agregado app eventos">
+      <created>1632287284317</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632287284317</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +339,8 @@
     <MESSAGE value="update django" />
     <MESSAGE value="eliminado archivo y onrm index" />
     <MESSAGE value="actualizado los modelos con su navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="actualizado los modelos con su navbar" />
+    <MESSAGE value="agregado app eventos" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregado app eventos" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Notifications" timestamp="1626027160927">
@@ -397,14 +395,15 @@
     <state width="1248" height="239" key="GridCell.Tab.0.right/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
     <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632264728348" />
     <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1631832175867" />
-    <state x="103" y="0" key="SettingsEditor" timestamp="1632262385215">
+    <state x="103" y="0" key="SettingsEditor" timestamp="1632287414727">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="103" y="0" key="SettingsEditor/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632262385215" />
+    <state x="103" y="0" key="SettingsEditor/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632287414727" />
     <state x="103" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1626054470638" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1626327335889">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1632287420302">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632287420302" />
     <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1626327335889" />
     <state x="427" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1626286069839">
       <screen x="0" y="0" width="1366" height="738" />
