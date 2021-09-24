@@ -25,39 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="added footer and yours models&#10;events finished">
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/REQUESTED" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/zip-safe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/REQUESTED" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/footer/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/footer/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onrm/static/css/events.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onrm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onrm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/onrm2/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onrm2/base2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/onrm2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onrm2/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="added footer and yours models&#10;events finished" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -293,7 +261,7 @@
       <workItem from="1631908507125" duration="307000" />
       <workItem from="1631918957602" duration="667000" />
       <workItem from="1632242652884" duration="23744000" />
-      <workItem from="1632372248174" duration="14079000" />
+      <workItem from="1632372248174" duration="14636000" />
     </task>
     <task id="LOCAL-00001" summary="update django">
       <created>1626284719915</created>
@@ -337,7 +305,28 @@
       <option name="project" value="LOCAL" />
       <updated>1632287899442</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added footer and yours models&#10;events finished">
+      <created>1632443137755</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632443137755</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added footer and yours models&#10;events finished">
+      <created>1632443300800</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632443300800</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added footer and yours models&#10;events finished">
+      <created>1632443643962</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1632443643962</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,10 +424,10 @@
     </state>
     <state x="103" y="0" key="SettingsEditor/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632287414727" />
     <state x="103" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1626054470638" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1632287934983">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1632443666793">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632287934983" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632443666793" />
     <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1626327335889" />
     <state x="427" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1626286069839">
       <screen x="0" y="0" width="1366" height="738" />
@@ -452,9 +441,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="379" y="200" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1626040837302" />
-    <state x="527" y="103" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1626284438899">
+    <state x="527" y="42" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1632443557623">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="527" y="42" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632443557623" />
     <state x="527" y="103" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.738@0.0.1366.738" timestamp="1626284438899" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626327187141">
       <screen x="0" y="0" width="1366" height="738" />
