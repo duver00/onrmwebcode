@@ -25,13 +25,38 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="agregado app eventos">
+    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="updated sqlparse and pillow...too requirements">
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/Pillow-8.3.2.dist-info/zip-safe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse-0.4.2.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventos/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onrm/static/css/events.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/sqlparse/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/sqlparse/filters/others.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse/filters/others.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/sqlparse/keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/sqlparse/keywords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/sqlformat.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/sqlformat.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onrm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onrm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/onrm2/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onrm2/base2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/onrm2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onrm2/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +292,8 @@
       <workItem from="1631825762687" duration="1887000" />
       <workItem from="1631908507125" duration="307000" />
       <workItem from="1631918957602" duration="667000" />
-      <workItem from="1632242652884" duration="18087000" />
+      <workItem from="1632242652884" duration="23744000" />
+      <workItem from="1632372248174" duration="13765000" />
     </task>
     <task id="LOCAL-00001" summary="update django">
       <created>1626284719915</created>
@@ -304,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632287284317</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update sqlparse and pillow...too requirements">
+      <created>1632287899442</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632287899442</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +373,8 @@
     <MESSAGE value="eliminado archivo y onrm index" />
     <MESSAGE value="actualizado los modelos con su navbar" />
     <MESSAGE value="agregado app eventos" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregado app eventos" />
+    <MESSAGE value="update sqlparse and pillow...too requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="update sqlparse and pillow...too requirements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Notifications" timestamp="1626027160927">
@@ -371,39 +405,39 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="465" y="236" key="Github.CreatePullRequestDialog/0.0.1366.738@0.0.1366.738" timestamp="1626286363170" />
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1632264728348">
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom" timestamp="1632436561710">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.bottom/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632264728348" />
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632436561710" />
     <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1631832175867" />
-    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1632264728348">
+    <state width="1323" height="174" key="GridCell.Tab.0.center" timestamp="1632436561709">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.center/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632264728348" />
+    <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632436561709" />
     <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1631832175867" />
-    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1632264728347">
+    <state width="1323" height="174" key="GridCell.Tab.0.left" timestamp="1632436561709">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.left/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632264728347" />
+    <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632436561709" />
     <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1631832175867" />
-    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1632264728348">
+    <state width="1323" height="174" key="GridCell.Tab.0.right" timestamp="1632436561709">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.right/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
-    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632264728348" />
+    <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632436561709" />
     <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1631832175867" />
     <state x="103" y="0" key="SettingsEditor" timestamp="1632287414727">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="103" y="0" key="SettingsEditor/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632287414727" />
     <state x="103" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1626054470638" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1632287420302">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1632287934983">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632287420302" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632287934983" />
     <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1626327335889" />
     <state x="427" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1626286069839">
       <screen x="0" y="0" width="1366" height="738" />

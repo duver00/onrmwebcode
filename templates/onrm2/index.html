@@ -54,7 +54,7 @@
         <ul>
           <li class=""><a href="#header">Inicio</a></li>
           <li class="scroll"><a href="#noticias">Noticias</a></li>
-          <li class="scroll"><a href="#nosotros">Nosotros</a></li>
+          <li class="scroll"><a href="#eventos">Eventos</a></li>
           <li class="scroll"><a href="#servicios">Servicios</a></li>
           <li class="scroll"><a href="#galeria">Galeria</a></li>
           <li class="drop-down disabled"><a aria-disabled="true" href="" ><i class="bx bx-user"></i></a>
@@ -122,10 +122,11 @@
     <!-- ======= Why Us Section ======= -->
   <div class="wrapper">
 
-	<h1 class="section-title"><span>Eventos</span></h1>
+	<h1 class="section-title" id="eventos"><span>Eventos</span></h1>
 
 	<!-- first item, not featured, no date range -->
    {% for evento in eventos %}
+     <br>
     <div class="event-list-item navy">
 		<div class="event-info">
 
@@ -139,7 +140,7 @@
 					<p class="event-time">{{ evento.hora }}</p>
 				</div>
 				<div class="event-excerpt">
-					<p>Monotonectally provide access to sticky web-readiness without inexpensive e-commerce. Conveniently promote real-time e-tailers for team building paradigms. Synergistically leverage other's equity invested ROI via client-based schemas...</p>
+					<p>{{ evento.resumen_evento }}</p>
 				</div>
 			</div>
 		</div>
@@ -351,38 +352,32 @@
        <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Enlances Externos</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://www.cubadebate.cu">Cubadebate</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://www.onrm.minem.cu">ONRM Internet</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://www.onrm.minem.cu">MINEM</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://www.cupet.cu">CUPET</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://www.igp.cu">IGP</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
+             <div class="col-lg-3 col-md-6 footer-links">
         <h4>Documentos ONRM</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'solicitudp' %}">Manual de Procedimiento Minero</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Manual de identidad</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan de Seguridad Informática</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan de Gestión de Riesgos</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Guía de Autocontrol</li>
+              {% for rector in rectores %}
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ rector.documento.url }}">{{ rector.titulo }}</a></li>
+               {% endfor %}
             </ul>
 
           </div>
             <div class="col-lg-3 col-md-6 footer-links">
         <h4>Control Internos</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'solicitudp' %}">Manual de Procedimiento Minero</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Manual de identidad</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan de Seguridad Informática</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan de Gestión de Riesgos</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Guía de Autocontrol</li>
+               {% for doc in control %}
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ doc.documento.url }}">{{ doc.titulo}}</a></li>
+                {% endfor %}
             </ul>
 
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Enlances Externos</h4>
+            <ul>
+              {% for link in links %}
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ link.url }}">{{ link.titulo }}</a></li>
+               {% endfor %}
+            </ul>
           </div>
 
            <div class="col-lg-3 col-md-6 footer-info">
