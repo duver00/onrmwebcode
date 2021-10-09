@@ -88,7 +88,7 @@
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="bx bx-search"></i></div>
               <h4 class="title"><a href="{% url 'telefonico' %}">Búsqueda Referativa</a></h4>
-              <p class="description">Sistema de búsqueda referativa accesible en modo web, dando más acceso a la información</p>
+              <p class="description">Búsqueda Referativa pero como aplicación web, diversificando las formas de acceder a la información</p>
             </div>
           </div>
 
@@ -102,9 +102,9 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-green">
-              <div class="icon"><i class="bx bxs-watch"></i></div>
-              <h4 class="title"><a href="{% url 'timeline' %}">Actividades</a></h4>
-              <p class="description">Un vistazo a la linea de tiempo de las actividades a realizar en la oficina en el mes en curso</p>
+              <div class="icon"><i class="bx bxs-archive"></i></div>
+              <h4 class="title"><a href="{% url 'timeline' %}">CDM</a></h4>
+              <p class="description">Control de Derechos Mineros un aplicación web para la gestión de las concesiones.</p>
             </div>
           </div>
 
@@ -112,7 +112,7 @@
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bxs-analyse"></i></div>
               <h4 class="title"><a href="{% url 'solicitudp' %}">Modelos</a></h4>
-              <p class="description">FTP disponible con los expedientes de los derechos mineros otorgados en la entidad</p>
+              <p class="description">Aplicación web que genera a partir de datos introducidos usuarios los modelos más utilizados de la ONRM.</p>
             </div>
           </div>
 
@@ -135,7 +135,7 @@
 			</div>
 			<div class="event-description">
 				<div class="event-header">
-					<a href="#"><h1 class="event-title">{{ evento.titulo|title }}</h1></a>
+					<a href="#"><h1 class="event-title">{{ evento.titulo }}</h1></a>
 					<p class="event-location">{{ evento.lugar_evento}}</p>
 					<p class="event-time">{{ evento.hora }}</p>
 				</div>
@@ -362,7 +362,7 @@
 
           </div>
             <div class="col-lg-3 col-md-6 footer-links">
-        <h4>Control Internos</h4>
+        <h4>Control Interno</h4>
             <ul>
                {% for doc in control %}
               <li><i class="bx bx-chevron-right"></i> <a href="{{ doc.documento.url }}">{{ doc.titulo}}</a></li>
@@ -400,7 +400,8 @@
         &copy; Copyright <strong><span>ONRM 2021</span></strong>.Todos los Derechos Reservados
       </div>
       <div class="credits"> Desarrollado por <a href="https://www.linkedin.com/in/diosvelis-duvergel-chib%C3%A1s-4a8595119/">Revud</a>
-        <p>Actualizado {{ now.created|date }}</p>
+        <p>Actualizado  {% if nowevent.created|date >= now.created|date %}{{ nowevent.created|date }}
+            {% else %}{{ now.created|date }}{% endif %}</p>
       </div>
     </div>
   </footer><!-- End Footer -->

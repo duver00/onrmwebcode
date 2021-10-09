@@ -27,8 +27,12 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/Lib/site-packages/django/forms/templates" />
-        <option value="$MODULE_DIR$/eventos/templates" />
         <option value="$MODULE_DIR$/templates" />
+        <option value="$MODULE_DIR$/noticias/templates" />
+        <option value="$MODULE_DIR$/modelos/templates" />
+        <option value="$MODULE_DIR$/registro/templates" />
+        <option value="$MODULE_DIR$/semana/templates" />
+        <option value="$MODULE_DIR$/galeria/templates" />
       </list>
     </option>
   </component>

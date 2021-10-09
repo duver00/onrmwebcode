@@ -75,45 +75,36 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-
-
     <div class="footer-top">
-      <div class="container">
+       <div class="container">
         <div class="row">
+
+             <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Documentos ONRM</h4>
+            <ul>
+              {% for rector in rectores %}
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ rector.documento.url }}">{{ rector.titulo }}</a></li>
+               {% endfor %}
+            </ul>
+
+          </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Control Interno</h4>
+            <ul>
+               {% for doc in control %}
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ doc.documento.url }}">{{ doc.titulo}}</a></li>
+                {% endfor %}
+            </ul>
+
+          </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Enlances Externos</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://www.cubadebate.cu">Cubadebate</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://www.onrm.minem.cu">ONRM Internet</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://www.onrm.minem.cu">MINEM</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://www.cupet.cu">CUPET</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://www.igp.cu">IGP</a></li>
+              {% for link in links %}
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ link.url }}">{{ link.titulo }}</a></li>
+               {% endfor %}
             </ul>
-          </div>
-
-           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Servicios</h4>
-            <ul>
-             <li><i class="bx bx-chevron-right"></i> <a href="{% url 'solicitudp' %}">Manual de Procedimiento Minero</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Manual de identidad</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan de Seguridad Informática</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan de Prevención de Riesgos</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Guía de Autocontrol</li>
-            </ul>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contactenos</h4>
-            <p>
-              Calle Calzada 7ma Número 852 <br>
-              entre 4 y 6, Vedado<br>
-              Plaza de la Revolución, La Habana<br><br>
-              <strong>Teléfono:</strong> +53 7833-0540<br>
-              <strong>Correo:</strong> onrm@onrm.minem.cu<br>
-            </p>
-
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
@@ -141,8 +132,8 @@
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
          Desarrollado por <a href="https://www.linkedin.com/in/diosvelis-duvergel-chib%C3%A1s-4a8595119/">Revud</a>
-
-
+          <p>Actualizado  {% if nowevent.created|date >= now.created|date %}{{ nowevent.created|date }}
+            {% else %}{{ now.created|date }}{% endif %}</p>
 
       </div>
     </div>
