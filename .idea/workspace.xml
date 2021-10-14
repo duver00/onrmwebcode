@@ -25,105 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="others config">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/django_environ-0.7.0.dist-info/AUTHORS.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/django_environ-0.7.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/django_environ-0.7.0.dist-info/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/django_environ-0.7.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/django_environ-0.7.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/django_environ-0.7.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/django_environ-0.7.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/environ/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/environ/compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/environ/environ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip-21.3.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip-21.3.dist-info/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip-21.3.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip-21.3.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip-21.3.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip-21.3.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip-21.3.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_internal/commands/index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_internal/operations/build/metadata_editable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_internal/operations/build/wheel_editable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_internal/utils/_log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_internal/utils/egg_link.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/distlib/t64-arm.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/distlib/w64-arm.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/packaging/_manylinux.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/packaging/_musllinux.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/platformdirs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/platformdirs/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/platformdirs/android.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/platformdirs/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/platformdirs/macos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/platformdirs/unix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/platformdirs/version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/platformdirs/windows.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/progress/colors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/tomli/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/tomli/_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/site-packages/pip/_vendor/tomli/_re.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/pip3.9.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos/migrations/0006_alter_eventosmodel_created.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onrm/dev_prod/development.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onrm/dev_prod/production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/pip-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/pip.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/pip3-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/pip3.8-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/pip3.8.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/pip3.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/busqueda_serv/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/busqueda_serv/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/busqueda_serv/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/busqueda_serv/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/busqueda_serv/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/busqueda_serv/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/busqueda_serv/templates/busqueda_serv.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/busqueda_serv/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/busqueda_serv/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/busqueda_serv/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventos/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/eventos/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/eventos/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer/context_processors.py" beforeDir="false" afterPath="$PROJECT_DIR$/footer/context_processors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django_environ-0.7.0.dist-info/REQUESTED" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/migrations/0002_auto_20201024_2042.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-21.3.dist-info/REQUESTED" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/templates/notificaciones.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/onrm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onrm/static/img/Música - Acceso directo.lnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/onrm/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onrm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/pyvenv.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/onrm/dev_prod/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/migrations/0002_auto_20210209_1811.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/static/css/linea.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/templates/Linea.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semana/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/onrm2/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onrm2/base2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/onrm2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onrm2/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="9628fe45-6b99-4bcd-b31a-061bc1cc6b4e" name="Default Changelist" comment="django-environ settings" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -371,7 +273,7 @@
       <workItem from="1634237562133" duration="247000" />
       <workItem from="1634237829945" duration="179000" />
       <workItem from="1634238028877" duration="10881000" />
-      <workItem from="1634249330877" duration="5818000" />
+      <workItem from="1634249330877" duration="6178000" />
     </task>
     <task id="LOCAL-00001" summary="update django">
       <created>1626284719915</created>
@@ -436,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632443643962</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="django-environ settings">
+      <created>1634255274901</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1634255274901</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +384,8 @@
     <MESSAGE value="agregado app eventos" />
     <MESSAGE value="update sqlparse and pillow...too requirements" />
     <MESSAGE value="added footer and yours models&#10;events finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="added footer and yours models&#10;events finished" />
+    <MESSAGE value="django-environ settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="django-environ settings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Notifications" timestamp="1626027160927">
@@ -506,30 +416,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="465" y="236" key="Github.CreatePullRequestDialog/0.0.1366.738@0.0.1366.738" timestamp="1626286363170" />
-    <state width="1323" height="142" key="GridCell.Tab.0.bottom" timestamp="1634254957822">
+    <state width="1323" height="142" key="GridCell.Tab.0.bottom" timestamp="1634255286994">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.bottom/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
     <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632436561710" />
-    <state width="1323" height="142" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1634254957822" />
-    <state width="1323" height="142" key="GridCell.Tab.0.center" timestamp="1634254957822">
+    <state width="1323" height="142" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1634255286994" />
+    <state width="1323" height="142" key="GridCell.Tab.0.center" timestamp="1634255286994">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.center/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
     <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632436561709" />
-    <state width="1323" height="142" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1634254957822" />
-    <state width="1323" height="142" key="GridCell.Tab.0.left" timestamp="1634254957822">
+    <state width="1323" height="142" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1634255286994" />
+    <state width="1323" height="142" key="GridCell.Tab.0.left" timestamp="1634255286994">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.left/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
     <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632436561709" />
-    <state width="1323" height="142" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1634254957822" />
-    <state width="1323" height="142" key="GridCell.Tab.0.right" timestamp="1634254957822">
+    <state width="1323" height="142" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1634255286994" />
+    <state width="1323" height="142" key="GridCell.Tab.0.right" timestamp="1634255286994">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1248" height="239" key="GridCell.Tab.0.right/0.0.1291.768@0.0.1291.768" timestamp="1625686472415" />
     <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632436561709" />
-    <state width="1323" height="142" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1634254957822" />
+    <state width="1323" height="142" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1634255286994" />
     <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1634249298414">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -551,11 +461,11 @@
     </state>
     <state x="103" y="0" key="SettingsEditor/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632287414727" />
     <state x="103" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1634239138740" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1632443666793">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1634255293796">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1632443666793" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1626327335889" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1634255293796" />
     <state x="427" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1626286069839">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
