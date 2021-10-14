@@ -103,7 +103,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-green">
               <div class="icon"><i class="bx bxs-archive"></i></div>
-              <h4 class="title"><a href="{% url 'timeline' %}">CDM</a></h4>
+              <h4 class="title"> <a href="#">CDM</a></h4>
               <p class="description">Control de Derechos Mineros un aplicación web para la gestión de las concesiones.</p>
             </div>
           </div>
@@ -400,8 +400,8 @@
         &copy; Copyright <strong><span>ONRM 2021</span></strong>.Todos los Derechos Reservados
       </div>
       <div class="credits"> Desarrollado por <a href="https://www.linkedin.com/in/diosvelis-duvergel-chib%C3%A1s-4a8595119/">Revud</a>
-        <p>Actualizado  {% if nowevent.created|date >= now.created|date %}{{ nowevent.created|date }}
-            {% else %}{{ now.created|date }}{% endif %}</p>
+        <p>Actualizado {{ last.created|date }}</p>
+
       </div>
     </div>
   </footer><!-- End Footer -->
