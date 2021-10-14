@@ -132,8 +132,7 @@
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
          Desarrollado por <a href="https://www.linkedin.com/in/diosvelis-duvergel-chib%C3%A1s-4a8595119/">Revud</a>
-          <p>Actualizado  {% if nowevent.created|date >= now.created|date %}{{ nowevent.created|date }}
-            {% else %}{{ now.created|date }}{% endif %}</p>
+          <p>Actualizado {{ last.created|date}}</p>
 
       </div>
     </div>

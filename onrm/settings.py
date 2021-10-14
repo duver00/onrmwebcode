@@ -9,25 +9,28 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
 from pathlib import Path
 import os
+import environ
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+env = environ.Env(DEBUG=(bool, False))
+environ.Env.read_env()
+# Set the project base directory
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'r=qg1x%d5$14l9&7n@ug^bts@m5z27z-+x3k)8r8j%r&)t&k6%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG')
+if env('DEBUG'):
+    from onrm.dev_prod.development import *
+else:
+    from onrm.dev_prod.production import *
 
-ALLOWED_HOSTS = []
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -42,14 +45,11 @@ INSTALLED_APPS = [
     'registro',
     'ckeditor',
     'ckeditor_uploader',
-    'notificaciones',
-    'semana',
-    'busqueda_serv',
     'galeria',
     'modelos',
     'materializecssform',
     'eventos',
-    'footer'
+    'footer',
 
 ]
 CKEDITOR_UPLOAD_PATH = "uploads/"
@@ -89,17 +89,6 @@ WSGI_APPLICATION = 'onrm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'onrmdb',
-        'USER': 'postgres',
-        'PASSWORD': 'libercuba',
-        'HOST': '127.0.0.1',
-        'DATABASE_PORT': '5432',
-
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -137,6 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
